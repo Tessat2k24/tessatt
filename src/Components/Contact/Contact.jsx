@@ -43,14 +43,14 @@ const Contact = () => {
           <div className="info">
             <div className="information">
               <img
-                src="src/assets/location.svg"
+                src="/src/assets/location.svg"
                 className="icon"
                 alt="Location"
               />
               <p>92 Cherry Drive Uniondale, NY 11553</p>
             </div>
             <div className="information">
-              <img src="Tessatt/src/assets/email.svg" className="icon" alt="Email" />
+              <img src="/src/assets/email.svg" className="icon" alt="Email" />
               <p>lorem@ipsum.com</p>
             </div>
             <div className="information">
@@ -64,14 +64,14 @@ const Contact = () => {
             <div className="social-icons">
               <a href="#">
                 <img
-                  src="src/assets/facebook.svg"
+                  src="Tessat/src/assets/facebook.svg"
                   className="social-icon"
                   alt="Facebook"
                 />
               </a>
               <a href="#">
                 <img
-                  src="src/assets/twitter.svg"
+                  src="Tessatt/src/assets/twitter.svg"
                   className="social-icon"
                   alt="Twitter"
                 />
@@ -85,7 +85,7 @@ const Contact = () => {
               </a>
               <a href="#">
                 <img
-                  src="src/assets/linkedin.svg"
+                  src="Tessatt/src/assets/linkedin.svg"
                   className="social-icon"
                   alt="LinkedIn"
                 />
