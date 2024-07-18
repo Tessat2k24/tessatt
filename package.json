@@ -1,7 +1,7 @@
 {
-  "homepage": "http://tessat2k24.github.io/Tessat",
+  "homepage": "http://tessat2k24.github.io/Tessat.github.io",
   "name": "tessat",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
