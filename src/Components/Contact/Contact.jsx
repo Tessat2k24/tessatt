@@ -71,21 +71,21 @@ const Contact = () => {
               </a>
               <a href="#">
                 <img
-                  src="/src/assets/twitter.svg"
+                  src="../src/assets/twitter.svg"
                   className="social-icon"
                   alt="Twitter"
                 />
               </a>
               <a href="#">
                 <img
-                  src="/src/assets/instagram.svg"
+                  src="../src/assets/instagram.svg"
                   className="social-icon"
                   alt="Instagram"
                 />
               </a>
               <a href="#">
                 <img
-                  src="/src/assets/linkedin.svg"
+                  src="../src/assets/linkedin.svg"
                   className="social-icon"
                   alt="LinkedIn"
                 />
