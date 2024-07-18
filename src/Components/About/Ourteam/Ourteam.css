@@ -1,0 +1,42 @@
+/* Ourteam.css */
+
+/* Override slick slider arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 30px; /* Adjust size as needed */
+  height: 0px; /* Adjust size as needed */
+  color: #fff; /* Arrow color */
+  border-radius: 50%; /* Make round */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slick-prev {
+  left: 10px; /* Adjust position */
+}
+
+.slick-next {
+  right: 10px; /* Adjust position */
+}
+
+/* Hover effect */
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
+/* Disable default outline */
+.slick-prev:focus,
+.slick-next:focus {
+  outline: none;
+}
+.slick-slide {
+  padding-right: 5px; /* Adjust the margin as per your design */
+}
