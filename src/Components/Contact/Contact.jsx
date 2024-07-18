@@ -43,7 +43,7 @@ const Contact = () => {
           <div className="info">
             <div className="information">
               <img
-                src="/src/assets/location.svg"
+                src="src/assets/location.svg"
                 className="icon"
                 alt="Location"
               />
