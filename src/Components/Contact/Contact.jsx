@@ -54,7 +54,7 @@ const Contact = () => {
               <p>lorem@ipsum.com</p>
             </div>
             <div className="information">
-              <img src="/src/assets/phone.svg" className="icon" alt="Phone" />
+              <img src="src/assets/phone.svg" className="icon" alt="Phone" />
               <p>123-456-789</p>
             </div>
           </div>
@@ -64,21 +64,21 @@ const Contact = () => {
             <div className="social-icons">
               <a href="#">
                 <img
-                  src="/src/assets/facebook.svg"
+                  src="Tessat/src/assets/facebook.svg"
                   className="social-icon"
                   alt="Facebook"
                 />
               </a>
               <a href="#">
                 <img
-                  src="/src/assets/twitter.svg"
+                  src="Tessatt/src/assets/twitter.svg"
                   className="social-icon"
                   alt="Twitter"
                 />
               </a>
               <a href="#">
                 <img
-                  src="/src/assets/instagram.svg"
+                  src="Tessatt/src/assets/instagram.svg"
                   className="social-icon"
                   alt="Instagram"
                 />
