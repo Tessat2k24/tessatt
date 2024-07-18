@@ -50,7 +50,7 @@ const Contact = () => {
               <p>92 Cherry Drive Uniondale, NY 11553</p>
             </div>
             <div className="information">
-              <img src="src/assets/email.svg" className="icon" alt="Email" />
+              <img src="Tessatt/src/assets/email.svg" className="icon" alt="Email" />
               <p>lorem@ipsum.com</p>
             </div>
             <div className="information">
@@ -78,7 +78,7 @@ const Contact = () => {
               </a>
               <a href="#">
                 <img
-                  src="src/assets/instagram.svg"
+                  src="Tessatt/src/assets/instagram.svg"
                   className="social-icon"
                   alt="Instagram"
                 />
