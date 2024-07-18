@@ -50,7 +50,7 @@ const Contact = () => {
               <p>92 Cherry Drive Uniondale, NY 11553</p>
             </div>
             <div className="information">
-              <img src="/src/assets/email.svg" className="icon" alt="Email" />
+              <img src="src/assets/email.svg" className="icon" alt="Email" />
               <p>lorem@ipsum.com</p>
             </div>
             <div className="information">
