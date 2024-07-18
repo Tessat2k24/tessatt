@@ -64,28 +64,28 @@ const Contact = () => {
             <div className="social-icons">
               <a href="#">
                 <img
-                  src="Tessat/src/assets/facebook.svg"
+                  src="tessat/src/assets/facebook.svg"
                   className="social-icon"
                   alt="Facebook"
                 />
               </a>
               <a href="#">
                 <img
-                  src="Tessatt/src/assets/twitter.svg"
+                  src="tessatt/src/assets/twitter.svg"
                   className="social-icon"
                   alt="Twitter"
                 />
               </a>
               <a href="#">
                 <img
-                  src="Tessatt/src/assets/instagram.svg"
+                  src="tessatt/src/assets/instagram.svg"
                   className="social-icon"
                   alt="Instagram"
                 />
               </a>
               <a href="#">
                 <img
-                  src="Tessatt/src/assets/linkedin.svg"
+                  src="tessatt/src/assets/linkedin.svg"
                   className="social-icon"
                   alt="LinkedIn"
                 />
