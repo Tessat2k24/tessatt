@@ -1,8 +1,8 @@
 {
+  "homepage": "http://tessat2k24.github.io/Tessat/",
   "name": "tessat",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://tessat2k24.github.io/Tessat",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,7 +13,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
