@@ -229,37 +229,6 @@ textarea.input {
     position: relative;
     left: 5px;
 }
-.big-circle {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: linear-gradient(to bottom, #1cd4af, #159b80);
-  bottom: 50%;
-  right: 50%;
-  transform: translate(-40%, 38%);
-}
-
-.big-circle:after {
-  content: "";
-  position: absolute;
-  width: 360px;
-  height: 360px;
-  background-color: #fafafa;
-  border-radius: 50%;
-  top: calc(50% - 180px);
-  left: calc(50% - 180px);
-}
-
-.square {
-  position: absolute;
-  height: 400px;
-  top: 50%;
-  left: 50%;
-  transform: translate(181%, 11%);
-  opacity: 0.2;
-}
-
 @media (max-width: 850px) {
   .form {
     grid-template-columns: 1fr;
@@ -283,11 +252,6 @@ textarea.input {
     height: 350px;
   }
 
-  .big-circle {
-    bottom: 75%;
-    transform: scale(0.9) translate(-40%, 30%);
-    right: 50%;
-  }
 
   .text {
     margin: 1rem 0 1.5rem 0;
@@ -296,6 +260,12 @@ textarea.input {
   .social-media {
     padding: 1.5rem 0 0 0;
   }
+  .social-icon {
+    width: 25px;
+    top: 5px;
+    position: relative;
+    left: 5px;
+}
 }
 
 @media (max-width: 480px) {
@@ -307,10 +277,6 @@ textarea.input {
     display: none;
   }
 
-  .square,
-  .big-circle {
-    display: none;
-  }
 
   form,
   .contact-info {
@@ -344,4 +310,10 @@ textarea.input {
   .btn {
     padding: 0.45rem 1.2rem;
   }
+  .social-icon {
+    width: 25px;
+    top: 2px;
+    position: relative;
+    left: 2px;
+}
 }
