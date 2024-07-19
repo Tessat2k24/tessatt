@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
+import Slider from "react-slick";
 import "./News.css";
 import news1 from "/src/assets/images/1.jpg";
 import news2 from "/src/assets/images/2.jpg";
 import news3 from "/src/assets/images/3.jpg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const NewsCarousel = () => {
   const newsData = [
     {
@@ -11,78 +15,89 @@ const NewsCarousel = () => {
       author: "Admin",
       description:
         "Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aspernatur reprehenderit velit est voluptatum, voluptas amet quasi dicta consectetur.",
-      image: news1 ,
+      image: news1,
+      link: "#news1", // Add a link for each news item
     },
     {
-      title: "Headinrfrrfg Will Be Here",
+      title: "Heading Will Be Here",
       dateFull: "Sep 19, 2020",
       author: "Admin",
       description:
         "Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aspernatur reprehenderit velit est voluptatum, voluptas amet quasi dicta consectetur.",
       image: news2,
+      link: "#news2", // Add a link for each news item
     },
     {
-      title: "sssss Will Be Here",
+      title: "Heading Will Be Here",
       dateFull: "Sep 19, 2020",
       author: "Admin",
       description:
         "Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aspernatur reprehenderit velit est voluptatum, voluptas amet quasi dicta consectetur.",
       image: news3,
+      link: "#news3", // Add a link for each news item
     },
     // Add more news data as needed
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? newsData.length - 1 : prevIndex - 1
-    );
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === newsData.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-    return (
-      <div className="news-container">
-        <h2 className="news-container-heading">News</h2>{" "}
-        <div className="news-carousel">
-          <button className="carousel-btn prev-btn" onClick={handlePrev}>
-            ❮
-          </button>
-          <div className="news-slides">
-            {newsData
-              .slice(currentIndex, currentIndex + 3)
-              .map((news, index) => (
-                <div className="news-slide" key={index}>
-                  <div className="news-image">
-                    <img src={news.image} alt={news.title} />
-                  </div>
-                  <div className="news-content">
-                    <h2>{news.title}</h2>
-                    <ul>
-                      <li>
-                        <i className="fa fa-calendar"></i> {news.dateFull}
-                      </li>
-                      <li>
-                        <i className="fa fa-user"></i> {news.author}
-                      </li>
-                    </ul>
-                    <p>{news.description}</p>
-                    <a href="#">Read More...</a>
-                  </div>
-                </div>
-              ))}
+  return (
+    <div className="news-container">
+<h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white mb-8">
+News</h1>
+      <Slider {...settings}>
+        {newsData.map((news, index) => (
+          <div className="news-slide" key={index}>
+            <div className="news-image">
+              <img src={news.image} alt={news.title} />
+            </div>
+            <div className="news-content">
+              <h2>{news.title}</h2>
+              <ul>
+                <li>
+                  <i className="fa fa-calendar"></i> {news.dateFull}
+                </li>
+                <li>
+                  <i className="fa fa-user"></i> {news.author}
+                </li>
+              </ul>
+              <p>{news.description}</p>
+              <a href={news.link}>Read More...</a>{" "}
+            </div>
           </div>
-          <button className="carousel-btn next-btn" onClick={handleNext}>
-            ❯
-          </button>
-        </div>
-      </div>
-    );
+        ))}
+      </Slider>
+    </div>
+  );
 };
 
 export default NewsCarousel;

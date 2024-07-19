@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import Masonry from "react-responsive-masonry";
 import "./Gallery.css";
-import img1 from "/src/assets/Image/1.jpg"
-import img2 from "/src/assets/Image/2.jpg"
-import img3 from "/src/assets/Image/3.jpg"
-import img4 from "/src/assets/Image/4.jpg"
-import img5 from "/src/assets/Image/5.jpg"
-import img6 from "/src/assets/Image/6.jpg"
-import img7 from "/src/assets/Image/7.jpg"
-import img8 from "/src/assets/Image/8.jpg"
-import img9 from "/src/assets/Image/9.jpg"
-import img10 from "/src/assets/Image/10.jpg"
+import img1 from "/src/assets/Image/1.jpg";
+import img2 from "/src/assets/Image/2.jpg";
+import img3 from "/src/assets/Image/3.jpg";
+import img4 from "/src/assets/Image/4.jpg";
+import img5 from "/src/assets/Image/5.jpg";
+import img6 from "/src/assets/Image/6.jpg";
+import img7 from "/src/assets/Image/7.jpg";
+import img8 from "/src/assets/Image/8.jpg";
+import img9 from "/src/assets/Image/9.jpg";
+import img10 from "/src/assets/Image/10.jpg";
 const images = [
   { id: 1, src: img1, alt: "Image 1" },
   { id: 2, src: img2, alt: "Image 2" },
@@ -37,6 +37,9 @@ const Gallery = () => {
 
   return (
     <div>
+      <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white mb-5">
+        Gallery{" "}
+      </h1>
       <Masonry columnsCount={3} gutter="10px" className="gallery">
         {images.map((image) => (
           <img

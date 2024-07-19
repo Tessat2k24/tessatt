@@ -1,6 +1,6 @@
 /* Common styles */
 .project-page {
-  padding: 100px; /* Padding around the content */
+  padding: 10px; /* Padding around the content */
   padding-top: 50px;
   background-color: #313f57; /* Background color for the page */
   text-align: center; /* Center align content */
@@ -117,7 +117,7 @@
 
 @media (max-width: 768px) {
   .project-page {
-    padding: 80px 20px;
+    padding: 20px 20px;
   }
 
   .project-item {
@@ -152,7 +152,7 @@
 
 @media (max-width: 480px) {
   .project-page {
-    padding: 60px 20px;
+    padding: 20px 20px;
   }
 
   .project-item {
