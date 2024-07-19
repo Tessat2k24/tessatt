@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./News.css";
-import news1 from "/src/assets/image/1.jpg";
-import news2 from "/src/assets/image/2.jpg";
-import news3 from "/src/assets/image/3.jpg";
+import news1 from "/src/assets/images/1.jpg";
+import news2 from "/src/assets/images/2.jpg";
+import news3 from "/src/assets/images/3.jpg";
 const NewsCarousel = () => {
   const newsData = [
     {
