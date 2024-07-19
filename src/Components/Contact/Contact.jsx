@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./Contact.css";
-
+import phone from "/src/assets/phone.svg"
 const Contact = () => {
   const inputRefs = useRef([]);
 
@@ -54,7 +54,7 @@ const Contact = () => {
               <p>lorem@ipsum.com</p>
             </div>
             <div className="information">
-              <img src="./src/assets/phone.svg" className="icon" alt="Phone" />
+              <img src={phone} className="icon" alt="Phone" />
               <p>123-456-789</p>
             </div>
           </div>
