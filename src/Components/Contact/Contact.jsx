@@ -64,7 +64,7 @@ const Contact = () => {
             <div className="social-icons">
               <a href="#">
                 <img
-                  src="facebook.svg"
+                  src="./facebook.svg"
                   className="social-icon"
                   alt="Facebook"
                 />
