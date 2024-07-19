@@ -1,6 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import "./Contact.css";
 import phone from "/src/assets/phone.svg"
+import email from "/src/assets/email.svg";
+import location from "/src/assets/location.svg";
+import instagram from "/src/assets/instagram.svg";
+import linkedin from "/src/assets/linkedin.svg";
+import facebook from "/src/assets/facebook.svg";
+import twitter from "/src/assets/twitter.svg";
+
 const Contact = () => {
   const inputRefs = useRef([]);
 
@@ -43,14 +50,14 @@ const Contact = () => {
           <div className="info">
             <div className="information">
               <img
-                src="./src/assets/location.svg"
+                src={location}
                 className="icon"
                 alt="Location"
               />
               <p>92 Cherry Drive Uniondale, NY 11553</p>
             </div>
             <div className="information">
-              <img src="./src/assets/email.svg" className="icon" alt="Email" />
+              <img src={email} className="icon" alt="Email" />
               <p>lorem@ipsum.com</p>
             </div>
             <div className="information">
@@ -64,28 +71,28 @@ const Contact = () => {
             <div className="social-icons">
               <a href="#">
                 <img
-                  src="./facebook.svg"
+                  src={facebook}
                   className="social-icon"
                   alt="Facebook"
                 />
               </a>
               <a href="#">
                 <img
-                  src="./src/assets/twitter.svg"
+                  src={twitter}
                   className="social-icon"
                   alt="Twitter"
                 />
               </a>
               <a href="#">
                 <img
-                  src="/src/assets/instagram.svg"
+                  src={instagram}
                   className="social-icon"
                   alt="Instagram"
                 />
               </a>
               <a href="#">
                 <img
-                  src="src/assets/linkedin.svg"
+                  src={linkedin}
                   className="social-icon"
                   alt="LinkedIn"
                 />
