@@ -3,7 +3,7 @@ import Masonry from "react-responsive-masonry";
 import "./Gallery.css";
 
 const images = [
-  { id: 1, src: { import:meta.env.BASE_URL + "/src/assets/Image/1.jpg" }, alt: "Image 1" },
+  { id: 1, src: "src/assets/Image/1.jpg", alt: "Image 1" },
   { id: 2, src: "src/assets/Image/2.jpg", alt: "Image 2" },
   { id: 3, src: "src/assets/Image/3.jpg", alt: "Image 3" },
   { id: 4, src: "src/assets/Image/4.jpg", alt: "Image 4" },

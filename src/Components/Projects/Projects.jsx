@@ -1,6 +1,11 @@
 import React from "react";
 import "./Projects.css"; // Your CSS file for styling
 
+
+import project1 from "/src/assets/images/1.jpg"
+import project2 from "/src/assets/images/2.jpg";
+import project3 from "/src/assets/images/3.jpg";
+
 const Projects = () => {
   return (
     <div className="project-page">
@@ -9,7 +14,7 @@ const Projects = () => {
         <div className="project-item">
           <div className="project-content">
             <div className="project-image">
-              <img src="/src/assets/images/1.jpg" alt="Project 1" />
+              <img src={project1} alt="Project 1" />
             </div>
             <div className="project-details">
               <h2>Small Lift Launch Vehicle</h2>
@@ -33,7 +38,7 @@ const Projects = () => {
         <div className="project-item">
           <div className="project-content">
             <div className="project-image">
-              <img src="/src/assets/images/2.jpg" alt="Project 2" />
+              <img src={project2} alt="Project 2" />
             </div>
             <div className="project-details">
               <h2>Research and Development</h2>
@@ -49,7 +54,7 @@ const Projects = () => {
         <div className="project-item">
           <div className="project-content">
             <div className="project-image">
-              <img src="/src/assets/images/3.jpg" alt="Project 3" />
+              <img src={project3} alt="Project 3" />
             </div>
             <div className="project-details">
               <h2>Mars Rover</h2>
