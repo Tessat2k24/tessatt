@@ -36,7 +36,7 @@ const Gallery = () => {
   };
 
   return (
-    <div>
+    <div className="gallery-container">
       <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white mb-5">
         Gallery{" "}
       </h1>
@@ -62,6 +62,9 @@ const Gallery = () => {
           />
         </div>
       )}
+      <button className="gallery-btn">
+        <a href="#">See More</a>
+      </button>
     </div>
   );
 };

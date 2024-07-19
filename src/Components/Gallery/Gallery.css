@@ -1,3 +1,4 @@
+
 .gallery {
   /* margin: 30px; */
   padding: 20px;
@@ -12,6 +13,40 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+/* Styles for the new section */
+.gallery-container {
+    margin-top: 20px;
+    flex-direction: column;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  border-bottom: 1px solid #333;
+        padding-bottom: 20px;
+
+}
+
+.gallery-btn {
+  background-color: #ff6f61; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  padding: 10px 20px; /* Button padding */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  text-transform: uppercase;
+  border-radius: 5px; /* Rounded corners */
+
+}
+
+.gallery-btn:hover {
+  background-color: #ff8b81; /* Button background color on hover */
+}
+
+.gallery-btn a {
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Inherit text color from button */
+}
 
 
 .modal {

@@ -31,8 +31,8 @@ function Navbar() {
       <li>Home</li>
       <li>About</li>
       <li>Projects</li>
-      <li>Gallery</li>
       <li>News</li>
+      <li>Gallery</li>
       <li>Contact</li>
 
       </ul>
