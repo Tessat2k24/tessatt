@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./News.css";
-
+import news1 from "/src/assets/image/1.jpg";
+import news2 from "/src/assets/image/2.jpg";
+import news3 from "/src/assets/image/3.jpg";
 const NewsCarousel = () => {
   const newsData = [
     {
@@ -9,7 +11,7 @@ const NewsCarousel = () => {
       author: "Admin",
       description:
         "Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aspernatur reprehenderit velit est voluptatum, voluptas amet quasi dicta consectetur.",
-      image: "/src/assets/images/1.jpg",
+      image: news1 ,
     },
     {
       title: "Headinrfrrfg Will Be Here",
@@ -17,7 +19,7 @@ const NewsCarousel = () => {
       author: "Admin",
       description:
         "Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aspernatur reprehenderit velit est voluptatum, voluptas amet quasi dicta consectetur.",
-      image: "/src/assets/images/2.jpg",
+      image: news2,
     },
     {
       title: "sssss Will Be Here",
@@ -25,7 +27,7 @@ const NewsCarousel = () => {
       author: "Admin",
       description:
         "Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aspernatur reprehenderit velit est voluptatum, voluptas amet quasi dicta consectetur.",
-      image: "/src/assets/images/5.jpg",
+      image: news3,
     },
     // Add more news data as needed
   ];
