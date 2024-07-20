@@ -43,26 +43,24 @@ const Contact = () => {
         <div className="contact-info">
           <h3 className="title">Let's get in touch</h3>
           <p className="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            dolorum adipisci recusandae praesentium dicta!
+            No project is too big or small. Ask us anything!
           </p>
 
           <div className="info">
             <div className="information">
-              <img
-                src={location}
-                className="icon"
-                alt="Location"
-              />
-              <p>92 Cherry Drive Uniondale, NY 11553</p>
+              <img src={location} className="icon" alt="Location" />
+              <p>
+                Electronics and Communication Dept Saintgits College of
+                Engineering Kottukulam Hills, Pathamuttam P. O Kerala 686532
+              </p>
             </div>
             <div className="information">
               <img src={email} className="icon" alt="Email" />
-              <p>lorem@ipsum.com</p>
+              <p>binojp2005@gmail.com</p>
             </div>
             <div className="information">
               <img src={phone} className="icon" alt="Phone" />
-              <p>123-456-789</p>
+              <p>+91 9037331907</p>
             </div>
           </div>
 
@@ -70,32 +68,16 @@ const Contact = () => {
             <p>Connect with us :</p>
             <div className="social-icons">
               <a href="#">
-                <img
-                  src={facebook}
-                  className="social-icon"
-                  alt="Facebook"
-                />
+                <img src={facebook} className="social-icon" alt="Facebook" />
               </a>
               <a href="#">
-                <img
-                  src={twitter}
-                  className="social-icon"
-                  alt="Twitter"
-                />
+                <img src={twitter} className="social-icon" alt="Twitter" />
               </a>
               <a href="#">
-                <img
-                  src={instagram}
-                  className="social-icon"
-                  alt="Instagram"
-                />
+                <img src={instagram} className="social-icon" alt="Instagram" />
               </a>
               <a href="#">
-                <img
-                  src={linkedin}
-                  className="social-icon"
-                  alt="LinkedIn"
-                />
+                <img src={linkedin} className="social-icon" alt="LinkedIn" />
               </a>
             </div>
           </div>
@@ -114,8 +96,8 @@ const Contact = () => {
                 className="input"
                 ref={(el) => (inputRefs.current[0] = el)}
               />
-              <label htmlFor="">Username</label>
-              <span>Username</span>
+              <label htmlFor="">Name</label>
+              <span>Name</span>
             </div>
             <div className="input-container">
               <input

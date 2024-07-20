@@ -1,16 +1,13 @@
 import React, { useState } from "react";
 import Masonry from "react-responsive-masonry";
 import "./Gallery.css";
-import img1 from "/src/assets/Image/1.jpg";
-import img2 from "/src/assets/Image/2.jpg";
-import img3 from "/src/assets/Image/3.jpg";
-import img4 from "/src/assets/Image/4.jpg";
-import img5 from "/src/assets/Image/5.jpg";
-import img6 from "/src/assets/Image/6.jpg";
-import img7 from "/src/assets/Image/7.jpg";
-import img8 from "/src/assets/Image/8.jpg";
-import img9 from "/src/assets/Image/9.jpg";
-import img10 from "/src/assets/Image/10.jpg";
+import img1 from "/src/assets/Orientation-Images/img1.jpeg";
+import img2 from "/src/assets/Orientation-Images/img2.jpeg";
+import img3 from "/src/assets/Orientation-Images/img3.jpeg";
+import img4 from "/src/assets/Orientation-Images/img4.jpeg";
+import img5 from "/src/assets/Orientation-Images/img5.jpeg";
+import img6 from "/src/assets/Orientation-Images/img6.jpeg";
+
 const images = [
   { id: 1, src: img1, alt: "Image 1" },
   { id: 2, src: img2, alt: "Image 2" },
@@ -18,10 +15,6 @@ const images = [
   { id: 4, src: img4, alt: "Image 4" },
   { id: 5, src: img5, alt: "Image 5" },
   { id: 6, src: img6, alt: "Image 6" },
-  { id: 7, src: img7, alt: "Image 7" },
-  { id: 8, src: img8, alt: "Image 8" },
-  { id: 9, src: img9, alt: "Image 9" },
-  { id: 10, src: img10, alt: "Image 10" },
 ];
 
 const Gallery = () => {

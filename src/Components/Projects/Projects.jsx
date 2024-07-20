@@ -20,20 +20,13 @@ const Projects = () => {
               <img src={project1} alt="Project 1" />
             </div>
             <div className="project-details">
-              <h2>Small Lift Launch Vehicle</h2>
+              <h2>CANSAT Projects</h2>
               <p>
-                Aeroin -Xs (S is a series of the rocket) Solid propellant
-                rockets are now an essential part of space-related
-                investigations and are widely employed for a variety of
-                experimental and commercial tasks, including delivering payloads
-                to the low Earth atmosphere, and beyond. This SLLV can lift a
-                payload or multiple payloads, up to a gross weight 150-250 kg,
-                and can place them at altitudes ranging from 150-500 km, based
-                on the requirements. ​ Manufacturing the entire outer structure
-                of the launch vehicle with modern manufacturing techniques such
-                as 3D printing has been proved to be cost effective as well as
-                time saving. Our rocket is only to launch Cubesat & small
-                satellites.
+                CANSAT projects are miniature satellites built by students to
+                conduct experiments during a simulated space mission. These
+                projects provide a unique platform for students to bridge the
+                gap between theoretical knowledge and practical application,
+                fostering innovation and problem-solving skills.
               </p>
             </div>
           </div>
@@ -44,12 +37,13 @@ const Projects = () => {
               <img src={project2} alt="Project 2" />
             </div>
             <div className="project-details">
-              <h2>Research and Development</h2>
+              <h2>Student Orientation</h2>
               <p>
-                We are driven by a relentless pursuit of innovation. Our
-                dedicated Research and Development (R&D) team pushes the
-                boundaries of aerospace technology, developing solutions that
-                shape the future of space exploration and applications
+                TESSAT ignites a passion for science, technology, engineering,
+                and math (STEM) in students through engaging workshops and
+                project-based learning experiences. These programs equip
+                students with the technical skills and innovative mindset to
+                thrive in the competitive world.
               </p>
             </div>
           </div>
@@ -60,15 +54,13 @@ const Projects = () => {
               <img src={project3} alt="Project 3" />
             </div>
             <div className="project-details">
-              <h2>Mars Rover</h2>
+              <h2>Research and Development</h2>
               <p>
-                Aeroin designed and developed Mars rover and took part in
-                International Rover Design Challenge - 2021 & 2022 conducted by
-                Mars Society South Asia. Aeroin participated and completed the
-                research on mars surface and sucessfully designed Mars rover
-                which could able to go under lava tubes. And also we have files
-                4 patents and One Patent Granted , which will be build by Aeroin
-                SpaceTech in future.
+                At TESSAT, our R&D team pushes the boundaries of aerospace
+                engineering by exploring innovative technologies and their
+                applications. Our research focuses on hardware and software
+                design, with a commitment to developing novel solutions for the
+                aerospace industry.
               </p>
             </div>
           </div>

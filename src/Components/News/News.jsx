@@ -10,32 +10,29 @@ import "slick-carousel/slick/slick-theme.css";
 const NewsCarousel = () => {
   const newsData = [
     {
-      title: "Heading Will Be Here",
-      dateFull: "Sep 19, 2020",
-      author: "Admin",
+      title: "Conducted orientation program for Mar Baselios Public School",
+      dateFull: "July 19, 2024",
       description:
-        "Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aspernatur reprehenderit velit est voluptatum, voluptas amet quasi dicta consectetur.",
+        "Kerala: we launched the school orientation progtram at Mar Baselios Public School, Devalokam, Kottayam. As it was an initial stage of the program we chose to have a talk session with 8th grade students. Their approach to the program was remarkable that made us to talk more about the tech trends of 21st century. The talk comprised of Quantum computing, nanotechnology, and more. We even explained our project on CANSAT and Elephant Deterrent System, and how they can achieve these kind of projects from intermediate level of education. The talk session was conducted by Asif Muhammad Sadhik and Edwin K Jayesh.",
       image: news1,
       link: "#news1", // Add a link for each news item
     },
     {
-      title: "Heading Will Be Here",
-      dateFull: "Sep 19, 2020",
-      author: "Admin",
+      title: "Registered for IN-SPACe CANSAT India Student Competition 2024-25 (2nd Edition)",
+      dateFull: "June 30, 2024",
       description:
-        "Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aspernatur reprehenderit velit est voluptatum, voluptas amet quasi dicta consectetur.",
+        "Bengaluru: we are delighted to announce that we have registered for IN-SPACe CANSAT India Student Competition 2024-25 (2nd Edition). This will be a major stepping stone for our CANSAT projects. As they have provided mission requirements for the project we will analysing to make this system more eco-friendly and future proof. We will keep it updated in future.",
       image: news2,
       link: "#news2", // Add a link for each news item
     },
-    {
-      title: "Heading Will Be Here",
-      dateFull: "Sep 19, 2020",
-      author: "Admin",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aspernatur reprehenderit velit est voluptatum, voluptas amet quasi dicta consectetur.",
-      image: news3,
-      link: "#news3", // Add a link for each news item
-    },
+    // {
+    //   title: "Heading Will Be Here",
+    //   dateFull: "Sep 19, 2020",
+    //   description:
+    //     "Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aspernatur reprehenderit velit est voluptatum, voluptas amet quasi dicta consectetur.",
+    //   image: news3,
+    //   link: "#news3", // Add a link for each news item
+    // },
     // Add more news data as needed
   ];
 
@@ -86,9 +83,7 @@ News</h1>
                 <li>
                   <i className="fa fa-calendar"></i> {news.dateFull}
                 </li>
-                <li>
-                  <i className="fa fa-user"></i> {news.author}
-                </li>
+                
               </ul>
               <p>{news.description}</p>
               <a href={news.link}>Read More...</a>{" "}
