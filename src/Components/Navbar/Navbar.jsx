@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import logo from "./Logo1.svg";
+import logo from "./Tessat-Logo.svg";
 import menu_icon from "/src/assets/menu.svg";
 
 function Navbar() {

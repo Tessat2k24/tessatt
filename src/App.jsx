@@ -7,6 +7,7 @@ import Gallery from "./Components/Gallery/Gallery";
 import Ourteam from "./Components/About/Ourteam/Ourteam";
 import Contact from "./Components/Contact/Contact";
 import Navbar from "./Components/Navbar/Navbar.jsx";
+import Footer from "./Components/Footer/Footer.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <News />
       <Gallery />
       <Contact />
+      <Footer/>
     </div>
   );
 }
