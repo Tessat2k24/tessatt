@@ -1,11 +1,10 @@
 /* Common styles */
 .project-page {
-  padding: 10px; /* Padding around the content */
-  padding-top: 50px;
-  background-color: #313f57; /* Background color for the page */
+  padding: 20px; /* Padding around the content */
   text-align: center; /* Center align content */
-  border-bottom: 1px solid #333;
+  color: #fff; /* Text color */
 }
+
 .project-btn {
   background-color: #ff6f61; /* Button background color */
   color: #fff; /* Button text color */
@@ -16,7 +15,7 @@
   transition: background-color 0.3s; /* Smooth transition for hover effect */
   text-transform: uppercase;
   border-radius: 5px; /* Rounded corners */
-  margin-left: 20px; /* Add some margin between heading and button */
+  margin-top: 20px; /* Margin top */
 }
 
 .project-btn:hover {
@@ -33,15 +32,7 @@
   margin: 0 auto; /* Center align container */
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 20px;
   gap: 40px;
-}
-
-.project-heading {
-  font-size: 2.5rem;
-  color: #fff; /* Adjust color to fit your theme */
-  margin-bottom: 40px;
-  text-align: center; /* Center align heading */
 }
 
 .project-item {
@@ -55,80 +46,30 @@
   flex-direction: column;
 }
 
-.project-image {
-  flex: 0 0 30%; /* Adjust width of image area */
-  padding-right: 40px; /* Increased padding around the image */
-}
-
-.project-image img {
-  max-width: 100%;
-  height: auto;
-}
-
 .project-details {
-  flex: 1; /* Take remaining width */
-  text-align: left; /* Align text to the left */
+  text-align: center; /* Center align text within .project-details */
+  margin-top: 20px; /* Margin top */
 }
 
 .project-details h2 {
   font-size: 2rem; /* Larger font size for project titles */
   margin-bottom: 10px; /* Reduce margin for smaller screens */
-  color: #fff; /* Adjust color to fit your theme */
+  border: 1px solid #ccc;
 }
 
 .project-details p {
-  font-size: 1.2rem; /* Increased font size for project descriptions */
+  font-size: 1.2rem; /* Font size for project descriptions */
   line-height: 1.6;
-  color: #fff; /* Adjust color to fit your theme */
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-  .project-header {
-    flex-direction: column; /* Stack heading and button vertically */
-  }
-
-  .project-btn {
-    margin-left: 0; /* Reset margin for button */
-    margin-top: 10px; /* Add margin to the top of the button */
-  }
-}
-
 @media (max-width: 1020px) {
-  .project-page {
-    padding: 20px 20px;
-  }
-
   .project-item {
     padding-bottom: 30px;
   }
 
-  .project-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .project-image {
-    flex: 0 0 100%;
-    padding-right: 0;
-    margin-bottom: 20px; /* Increase bottom margin for better spacing */
-  }
-
-  .project-image img {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .project-details {
-    flex: 1 0 100%;
-    text-align: center;
-  }
-
   .project-details h2 {
     font-size: 1.8rem; /* Adjusted font size */
-    margin-bottom: 15px;
   }
 
   .project-details p {
@@ -137,74 +78,15 @@
 }
 
 @media (max-width: 480px) {
-  .project-page {
-    padding: 20px 20px;
-  }
-
   .project-item {
     padding-bottom: 20px;
   }
 
   .project-details h2 {
     font-size: 1.6rem; /* Adjusted font size */
-    margin-bottom: 10px;
   }
 
   .project-details p {
     font-size: 1rem; /* Adjusted font size */
-  }
-}
-
-/* Laptop specific styling */
-@media (min-width: 1024px) {
-  .project-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 40px;
-    margin-bottom: 40px;
-  }
-
-  .project-content {
-    display: flex;
-    align-items: center;
-    flex-direction: row; /* Row direction for laptop view */
-  }
-
-  .project-image {
-    flex: 0 0 30%;
-    padding-right: 40px;
-  }
-
-  .project-details {
-    flex: 0 0 65%;
-    padding-left: 40px;
-    text-align: left;
-  }
-
-  /* Alternate project item layout */
-  .project-item:nth-child(odd) .project-image {
-    order: 1; /* Image on the left for odd items */
-    padding-right: 40px;
-    padding-left: 0;
-  }
-
-  .project-item:nth-child(odd) .project-details {
-    order: 2;
-    padding-left: 40px;
-    padding-right: 0;
-    text-align: left;
-  }
-
-  .project-item:nth-child(even) .project-image {
-    order: 2; /* Image on the right for even items */
-    padding-right: 0;
-    padding-left: 40px;
-  }
-
-  .project-item:nth-child(even) .project-details {
-    order: 1;
-    padding-left: 0;
-    padding-right: 40px;
   }
 }

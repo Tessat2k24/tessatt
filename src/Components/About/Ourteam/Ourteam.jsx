@@ -269,165 +269,85 @@ import "./Ourteam.css"; // Make sure to adjust the path to your CSS file
 // Import the SVG image
 import instagramIcon from "./instagram1.svg"; // Update the path to your SVG file
 import facebookIcon from "./facebook1.svg"; // Update the path to your SVG file
-import linkdinIcon from "./linkdin1.svg"; // Update the path to your SVG file
+import linkedinIcon from "./linkdin1.svg"; // Update the path to your SVG file
+
+import edwin from "./ProfileImages/Edwin.jpg";
+import blesson from "./ProfileImages/Blesson.jpeg";
+import asif from "./ProfileImages/Asif.jpeg";
+import navneeth from "./ProfileImages/Navneeth.jpeg";
+// import rohan from "./ProfileImages/Blesson.jpeg";
+// import blesson from "./ProfileImages/Blesson.jpeg";
+// import blesson from "./ProfileImages/Blesson.jpeg";
+// import blesson from "./ProfileImages/Blesson.jpeg"
+
+
+
 
 const Ourteam = () => {
   const teamMembers = [
     {
-      name: "Arthur Melo",
-      role: "Design Director",
-      image:
-        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+      name: "Edwin K Jayesh",
+      role: "Team Lead",
+      image: edwin,
       socialLinks: {
-        facebook:"https://www.youtube.com/",
-        instagram: "https://www.google.com/",
-        linkdin:'https://chatgpt.com/'
+        email: "edwinkjap11@gmail.com",
+        instagram:
+          "https://www.instagram.com/edwin.k.jayesh?igsh=MWJib3hnMTRwaTV1cA==",
+        linkedin: "https://www.linkedin.com/in/edwinkjayesh",
       },
     },
     {
-      name: "Amelia Anderson",
-      role: "Lead Developer",
-      image:
-        "https://images.unsplash.com/photo-1531590878845-12627191e687?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+      name: "Blesson Biji",
+      role: "Member",
+      image: blesson,
       socialLinks: {
-        reddit: "#",
-        facebook: "#",
-        github: "#",
+        email: "",
+        instagram: "",
+        linkedin: "https://www.linkedin.com/in/blesson-biji-544832235",
+      },
+    },
+    {
+      name: "Asif Muhammad Sadhik",
+      role: "Member",
+      image: asif,
+      socialLinks: {
+        email: "mohammedazif77@gmail.com",
         instagram: "#",
+        linkedin: "#",
       },
     },
     {
-      name: "Arthur Melo",
-      role: "Design Director",
-      image:
-        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+      name: "Navneeth Krishnan",
+      role: "Member",
+      image: navneeth,
       socialLinks: {
-        reddit: "#",
-        facebook: "#",
-        github: "#",
+        email: "mail.navneethk@gmail.com",
+        instagram:
+          "https://www.instagram.com/nav____k?igsh=MTQ3a3BqZmRoYmMxOQ==",
+        linkedin:
+          "https://www.linkedin.com/in/navneeth-k-11b02a229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
     },
-    {
-      name: "Amelia Anderson",
-      role: "Lead Developer",
-      image:
-        "https://images.unsplash.com/photo-1531590878845-12627191e687?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-      socialLinks: {
-        reddit: "#",
-        facebook: "#",
-        github: "#",
-      },
-    },
-      {
-        name: "Benjamin Carter",
-        role: "UI/UX Designer",
-        image:
-          "https://images.unsplash.com/photo-1531590878845-12627191e687?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-        socialLinks: {
-          reddit: "#",
-          facebook: "#",
-          github: "#",
-        },
-      },
-      {
-        name: "Sophia Martinez",
-        role: "Software Engineer",
-        image:
-          "https://images.unsplash.com/photo-1531590878845-12627191e687?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-        socialLinks: {
-          reddit: "#",
-          facebook: "#",
-          github: "#",
-        },
-      },
-      {
-        name: "Ethan Johnson",
-        role: "Data Scientist",
-        image:
-          "https://images.unsplash.com/photo-1531590878845-12627191e687?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-        socialLinks: {
-          reddit: "#",
-          facebook: "#",
-          github: "#",
-        },
-      },
-      {
-        name: "Olivia Brown",
-        role: "Project Manager",
-        image:
-          "https://images.unsplash.com/photo-1531590878845-12627191e687?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-        socialLinks: {
-          reddit: "#",
-          facebook: "#",
-          github: "#",
-        },
-      },
-      {
-        name: "Lucas Taylor",
-        role: "Frontend Developer",
-        image:
-          "https://images.unsplash.com/photo-1531590878845-12627191e687?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-        socialLinks: {
-          reddit: "#",
-          facebook: "#",
-          github: "#",
-        },
-      },
-      {
-        name: "Ava Wilson",
-        role: "Marketing Specialist",
-        image:
-          "https://images.unsplash.com/photo-1531590878845-12627191e687?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-        socialLinks: {
-          reddit: "#",
-          facebook: "#",
-          github: "#",
-        },
-      },
-      {
-        name: "Liam Moore",
-        role: "Backend Developer",
-        image:
-          "https://images.unsplash.com/photo-1531590878845-12627191e687?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-        socialLinks: {
-          reddit: "#",
-          facebook: "#",
-          github: "#",
-        },
-      },
-      {
-        name: "Charlotte Lee",
-        role: "Graphic Designer",
-        image:
-          "https://images.unsplash.com/photo-1531590878845-12627191e687?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-        socialLinks: {
-          reddit: "#",
-          facebook: "#",
-          github: "#",
-        },
-      },
-      {
-        name: "Mason Garcia",
-        role: "System Administrator",
-        image:
-          "https://images.unsplash.com/photo-1531590878845-12627191e687?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-        socialLinks: {
-          reddit: "#",
-          facebook: "#",
-          github: "#",
-        },
-      },
-      {
-        name: "Amelia Anderson",
-        role: "Lead Developer",
-        image:
-          "https://images.unsplash.com/photo-1531590878845-12627191e687?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-        socialLinks: {
-          reddit: "#",
-          facebook: "#",
-          github: "#",
-        },
-      },
+    // {
+    //   name: "Roshan R John",
+    //   role: "Member",
+    //   image: rohan,
+    //   socialLinks: {
+    //     email: "roshanrjohn442@gmail.com",
+    //     instagram: "https://www.instagram.com/roshan_r_john/",
+    //     linkedin: "http://www.linkedin.com/in/roshan-r-johnb3588b235",
+    //   },
+    // },
+    // {
+    //   name: "",
+    //   role: "Member",
+    //   image: ,
+    //   socialLinks: {
+    //     email: "",
+    //     instagram: "",
+    //     linkedin: "",
+    //   },
+    // },
     // Add more team members as needed
   ];
 
@@ -472,7 +392,7 @@ const Ourteam = () => {
             >
               <div className="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
                 <img
-                  className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
+                  className="object-scale  w-32 h-32 rounded-full ring-3 ring-gray-300"
                   src={member.image}
                   alt={member.name}
                 />
@@ -490,6 +410,7 @@ const Ourteam = () => {
                     href={member.socialLinks.instagram}
                     className="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
                     aria-label="Instagram"
+                    target="blank"
                   >
                     <img
                       src={instagramIcon}
@@ -499,25 +420,22 @@ const Ourteam = () => {
                   </a>
 
                   <a
-                    href={member.socialLinks.facebook}
+                    href={`mailto:${member.socialLinks.email}`}
                     className="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
-                    aria-label="Facebook"
+                    aria-label="email" target="blank"
                   >
-                    <img
-                      src={facebookIcon}
-                      alt="Facebook"
-                      className="w-6 h-6"
-                    />
+                    <img src={facebookIcon} alt="email" className="w-6 h-6" />
                   </a>
 
                   <a
-                    href={member.socialLinks.linkdin}
+                    href={member.socialLinks.linkedin}
                     className="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
-                    aria-label="Linkdin"
+                    aria-label="Linkedin"
+                    target="blank"
                   >
                     <img
-                      src={linkdinIcon}
-                      alt="Linkdin"
+                      src={linkedinIcon}
+                      alt="Linkedin"
                       className="w-6 h-6"
                     />
                   </a>
