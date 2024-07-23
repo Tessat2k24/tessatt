@@ -276,8 +276,8 @@ import blesson from "./ProfileImages/Blesson.jpeg";
 import asif from "./ProfileImages/Asif.jpeg";
 import navneeth from "./ProfileImages/Navneeth.jpeg";
 // import rohan from "./ProfileImages/Blesson.jpeg";
-// import blesson from "./ProfileImages/Blesson.jpeg";
-// import blesson from "./ProfileImages/Blesson.jpeg";
+import bijin from "./ProfileImages/Bijin.jpeg";
+import bino from "./ProfileImages/Bino.jpeg";
 // import blesson from "./ProfileImages/Blesson.jpeg"
 
 
@@ -326,6 +326,26 @@ const Ourteam = () => {
           "https://www.instagram.com/nav____k?igsh=MTQ3a3BqZmRoYmMxOQ==",
         linkedin:
           "https://www.linkedin.com/in/navneeth-k-11b02a229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+    },
+    {
+      name: "Bijin Kurian",
+      role: "Member",
+      image:bijin,
+      socialLinks: {
+        email: "bijinkalayil@gmail.com",
+        instagram: "https://www.instagram.com/bijin_kk?igsh=bHNhb3R3MWZtNnp2",
+        linkedin: "https://www.linkedin.com/in/bijin-kurian-306051252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+    },
+    {
+      name: "Bino J Panicker",
+      role: "Member",
+      image:bino ,
+      socialLinks: {
+        email: "binojp2005@gmail.com",
+        instagram: "https://www.instagram.com/binojpanicker?igsh=OXhhN2ZpOTRvNXho",
+        linkedin: "https://www.linkedin.com/in/bino-j-panicker-820937257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
     },
     // {
@@ -392,7 +412,7 @@ const Ourteam = () => {
             >
               <div className="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
                 <img
-                  className="object-scale  w-32 h-32 rounded-full ring-3 ring-gray-300"
+                  className="object-cover object-top w-32 h-32 rounded-full ring-3 ring-gray-300"
                   src={member.image}
                   alt={member.name}
                 />
@@ -422,7 +442,8 @@ const Ourteam = () => {
                   <a
                     href={`mailto:${member.socialLinks.email}`}
                     className="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
-                    aria-label="email" target="blank"
+                    aria-label="email"
+                    target="blank"
                   >
                     <img src={facebookIcon} alt="email" className="w-6 h-6" />
                   </a>
