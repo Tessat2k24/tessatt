@@ -1,20 +1,21 @@
 import React from "react";
 import "./Projects.css"; // Your CSS file for styling
 
+
+import cansat from "./cansat.jpg"
+import research from "./research.jpg"
+import orientation from "./orientation.jpg"
 const Projects = () => {
   return (
     <div className="project-page">
-      <div className="project-header">
-        <h1
-          className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white"
-          style={{ marginBottom: "20px" }}
-        >
-          Our Works
-        </h1>
-      </div>
+      <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white mb-2">
+Our Works      </h1>{" "}
       <div className="project-container">
         <div className="project-item">
           <div className="project-content">
+            <div className="project-image">
+              <img src={cansat} alt="Project 1" />
+            </div>
             <div className="project-details">
               <h2>1. CANSAT Projects</h2>
               <p>
@@ -29,7 +30,9 @@ const Projects = () => {
         </div>
         <div className="project-item">
           <div className="project-content">
-          
+            <div className="project-image">
+              <img src={orientation} alt="Project 2" />
+            </div>
             <div className="project-details">
               <h2>2. Student Orientation</h2>
               <p>
@@ -44,6 +47,9 @@ const Projects = () => {
         </div>
         <div className="project-item">
           <div className="project-content">
+            <div className="project-image">
+              <img src={research} alt="Project 3" />
+            </div>
             <div className="project-details">
               <h2>3. Research and Development</h2>
               <p>
@@ -56,10 +62,8 @@ const Projects = () => {
             </div>
           </div>
         </div>
+        {/* Add more project items as needed */}
       </div>
-      <button className="project-btn">
-        <a href="#">See More</a>
-      </button>
     </div>
   );
 };

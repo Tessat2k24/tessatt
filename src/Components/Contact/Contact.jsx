@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./Contact.css";
-import phone from "/src/assets/phone.svg"
+import phone from "/src/assets/phone.svg";
 import email from "/src/assets/email.svg";
 import location from "/src/assets/location.svg";
 import instagram from "/src/assets/instagram.svg";

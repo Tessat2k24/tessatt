@@ -1,0 +1,50 @@
+.popup {
+  background-color: black;
+  min-height: 100vh; /* Minimum height of the viewport */
+  width: 100%; /* Full width of the viewport */
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  padding: 20px; /* Create space between content and edges */
+  position: relative; /* Ensure the container is positioned relative */
+  overflow: hidden;
+}
+
+.image {
+  max-width: 100%; /* Ensure the image does not exceed the container */
+  max-height: 50vh; /* Limit image height to leave space for navbar */
+  margin-bottom: 20px; /* Space between image and navbar */
+}
+
+.navbar110 {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  background-color: rgba(255, 255, 255, 0.1); /* Light background with transparency */
+  padding: 10px 0; /* Padding above and below links */
+  border-radius: 5px; /* Rounded corners */
+  position: absolute; /* Position the navbar relative to .popup */
+  bottom: 20px; /* Distance from the bottom */
+  margin:20px ;
+  overflow-x: hidden;
+}
+
+.navbar110 a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px; /* Padding around each link */
+}
+
+@media screen and (max-width: 600px) {
+  .navbar110 {
+    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+  }
+
+  .navbar110 a {
+    margin: 5px; /* Adjust margin for smaller screens */
+      font-size: 15px;
+  padding: 2px; /* Padding around each link */
+  }
+}

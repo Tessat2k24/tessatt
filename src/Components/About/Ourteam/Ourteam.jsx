@@ -268,7 +268,7 @@ import "./Ourteam.css"; // Make sure to adjust the path to your CSS file
 
 // Import the SVG image
 import instagramIcon from "./instagram1.svg"; // Update the path to your SVG file
-import facebookIcon from "./facebook1.svg"; // Update the path to your SVG file
+import emailIcon from "./email1.svg"; // Update the path to your SVG file
 import linkedinIcon from "./linkdin1.svg"; // Update the path to your SVG file
 
 import edwin from "./ProfileImages/Edwin.jpg";
@@ -410,7 +410,7 @@ const Ourteam = () => {
               key={index}
               className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4"
             >
-              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+              <div className="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl">
                 <img
                   className="object-cover object-top w-32 h-32 rounded-full ring-3 ring-gray-300"
                   src={member.image}
@@ -445,7 +445,7 @@ const Ourteam = () => {
                     aria-label="email"
                     target="blank"
                   >
-                    <img src={facebookIcon} alt="email" className="w-6 h-6" />
+                    <img src={emailIcon} alt="email" className="w-6 h-6" />
                   </a>
 
                   <a

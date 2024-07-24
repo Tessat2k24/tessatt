@@ -15,7 +15,6 @@
   font-weight: 500; */
   font-style: normal;
   color: #fff;
+  overflow-x: hidden;
 }
-body{
-    background-color: #313f57;
-}
+body,html{overflow-x: hidden;}

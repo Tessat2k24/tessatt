@@ -2,7 +2,7 @@
 .container220 {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 2rem;
   overflow: hidden;
   display: flex;
@@ -191,7 +191,7 @@ textarea.input {
 }
 
 .icon {
-  width: 18px;
+  width: 24px;
   margin-right: 0.7rem;
 }
 

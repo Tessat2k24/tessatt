@@ -1,103 +1,75 @@
-.news-container {
-  padding: 50px 20px;
-  text-align: center;
-  margin: 10px auto;
-  border-bottom: 1px solid #333;
-}
-
-.news-container-heading {
-  font-size: 2.5rem;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.slick-prev,
-.slick-next {
-  width: 30px;
-  height: 30px;
-  z-index: 2;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  font-size: 30px;
-  color: white;
-}
-
-.news-slide {
-  background: #f8d673;
-  border: 1px solid #ddd;
+/* News.css */
+.news-section {
+  background-color: white;
+  padding: 20px;
+  margin: 20px; /* Center the section horizontally */
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 5px;
-  overflow: hidden;
-  padding: 10px;
-  margin: 0 auto; /* Ensure centered alignment */
-  width: 100%; /* Ensure full width */
-  max-width: 500px; /* Optional: maximum width */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
-
-.news-image {
-  height: auto; /* Ensure images scale appropriately */
+.newscontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
   overflow: hidden;
 }
-
-.news-image img {
-  width: 100%;
-  height: auto;
-  object-fit: contain; /* Maintain aspect ratio and prevent cropping */
+.news-head {
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+  flex: 1; /* Take up remaining space */
 }
 
 .news-content {
-  padding: 15px;
+  flex: 1;
+  padding: 0 20px;
+  text-align: center; /* Center align content */
 }
 
-.news-content h2 {
-  font-size: 18px;
-  margin: 10px 0;
-  color: #313f57;
+.news-description {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.news-content ul {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  gap: 10px;
-  font-size: 12px;
-}
-
-.news-content ul li {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  color: #313f57;
-}
-
-.news-content p {
-  font-size: 14px;
-  color: #313f57;
-  line-height: 1.5;
-  margin: 10px 0;
-}
-
-.news-content a {
-  display: inline-block;
-  background: #313f57;
-  color: #fff;
-  padding: 5px 15px;
+.news-btn {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
   border-radius: 5px;
-  text-decoration: none;
-  transition: background 0.3s;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block; /* Ensure button is a block element for centering */
+  margin: 0 auto; /* Center align button */
 }
 
-.news-content a:hover {
-  background: #313f;
+.news-btn:hover {
+  background-color: #ff8b81;
 }
 
-.slick-dots li button:before {
-  font-size: 12px;
-  color: #717171;
-}
+@media (max-width: 768px) {
+  .news-section {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.slick-dots li.slick-active button:before {
-  color: #313f57;
+  .tumblr-post {
+    margin-bottom: 20px;
+  }
+
+  .news-content {
+    padding: 0;
+  }
+
+  .news-btn {
+    margin-top: 20px; /* Add space between content and button */
+  }
 }
