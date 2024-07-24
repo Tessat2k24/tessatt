@@ -19,20 +19,11 @@
 }
 
 .contact-form {
-  background-color: #f8d673;
+    background-color: rgba(0,0,0,0.8);
   position: relative;
 }
 
-.contact-form:before {
-  content: "";
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  background-color: #f8d673;
-  transform: rotate(45deg);
-  top: 50px;
-  left: -13px;
-}
+
 
 form {
   padding: 2.3rem 2.2rem;
@@ -47,6 +38,7 @@ form {
   font-size: 1.5rem;
   line-height: 1;
   margin-bottom: 0.7rem;
+  overflow: hidden;
 }
 
 .input-container {
@@ -100,7 +92,7 @@ textarea.input {
   background-color: #fff;
   border: 2px solid #fafafa;
   font-size: 0.95rem;
-  color: #555;
+  color: #000;
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -134,7 +126,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #f8d673;
+    background-color: rgba(0,0,0,0.8);
   top: 50%;
   transform: translateY(-50%);
 }
@@ -167,17 +159,19 @@ textarea.input {
 
 .contact-info .title {
   color: #000;
+    overflow: hidden;
+
 }
 
 .text {
-  color: #333;
+  color: #000;
   margin: 1.5rem 0 2rem 0;
 }
 
 .information {
   display: flex;
   align-items: center;
-  color: #555;
+  color: #000;
   margin: 0.7rem 0;
   font-size: 0.95rem;
 }
@@ -190,29 +184,34 @@ textarea.input {
 }
 
 .information p {
-  color: #555;
+  color: #000;
   margin: 0;
   flex: 1;
 }
 
 .social-media {
   padding: 2rem 0 0 0;
+  overflow: hidden;
 }
 
 .social-media p {
-  color: #333;
+  color: #000;
 }
 
 .social-icons {
   display: flex;
   margin-top: 0.5rem;
+  overflow: hidden;
 }
-
+.social-icon:hover {
+border: 1px solid black;
+padding: 2px;
+}
 .social-icons a {
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(45deg, #f8d673, #f8d673);
+  background: linear-gradient(45deg, #fff, #fff);
   color: #fff;
   text-align: center;
   line-height: 35px;
@@ -220,15 +219,12 @@ textarea.input {
   transition: 0.3s;
 }
 
-.social-icons a:hover {
-  transform: scale(1.05);
-}
-
 .social-icon {
   width: 25px;
   top: 5px;
   position: relative;
   left: 5px;
+  overflow: hidden;
 }
 
 @media (max-width: 850px) {
@@ -241,12 +237,6 @@ textarea.input {
     top: -75px;
     right: 65px;
     transform: scale(0.95);
-  }
-
-  .contact-form:before {
-    top: -13px;
-    left: initial;
-    right: 70px;
   }
 
   .text {

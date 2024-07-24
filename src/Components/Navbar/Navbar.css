@@ -42,7 +42,10 @@ nav ul li {
   font-weight: 500;
   color: black;
 }
+li:hover{
+cursor: pointer;
 
+}
 .btn {
   background-color: #fff;
   color: #212121;

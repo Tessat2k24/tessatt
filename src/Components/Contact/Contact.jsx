@@ -6,7 +6,7 @@ import location from "/src/assets/location.svg";
 import instagram from "/src/assets/instagram.svg";
 import linkedin from "/src/assets/linkedin.svg";
 import facebook from "/src/assets/facebook.svg";
-import twitter from "/src/assets/twitter.svg";
+import twitter from "/src/assets/x.svg";
 
 const Contact = () => {
   const inputRefs = useRef([]);
@@ -50,8 +50,8 @@ const Contact = () => {
             <div className="information">
               <img src={location} className="icon" alt="Location" />
               <p>
-                Cabin No.3 SCIE lab Ramaujan Block Saintgits College of Engineering
-                Kottukulam Hills, Pathamuttam P. O Kerala 686532
+                Cabin No.3 SCIE lab Ramaujan Block Saintgits College of
+                Engineering Kottukulam Hills, Pathamuttam P. O Kerala 686532
               </p>
             </div>
             <div className="information">
@@ -67,26 +67,35 @@ const Contact = () => {
           <div className="social-media">
             <p>Connect with us :</p>
             <div className="social-icons">
-              <a href="#">
-                <img src={facebook} className="social-icon" alt="Facebook" />
-              </a>
-              <a href="#">
-                <img src={twitter} className="social-icon" alt="Twitter" />
-              </a>
-              <a href="#">
+              {/* <a href="#">
+                <img
+                  src={facebook}
+                  className="social-icon"
+                  alt="Facebook"
+                  target="blank"
+                />
+              </a> */}
+
+              <a
+                href="https://www.instagram.com/tessat.space?igsh=OGt4cTVrMWFicnd1"
+                target="blank"
+              >
                 <img src={instagram} className="social-icon" alt="Instagram" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/company/tessat/" target="blank">
                 <img src={linkedin} className="social-icon" alt="LinkedIn" />
+              </a>
+              <a
+                href="https://x.com/Tessat_Space?t=9ig4oenY8aDOwikBH1aiAw&s=09"
+                target="blank"
+              >
+                <img src={twitter} className="social-icon" alt="Twitter" />
               </a>
             </div>
           </div>
         </div>
 
         <div className="contact-form">
-          <span className="circle one"></span>
-          <span className="circle two"></span>
-
           <form action="index.html" autoComplete="off">
             <h3 className="title">Contact us</h3>
             <div className="input-container">

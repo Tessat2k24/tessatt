@@ -37,7 +37,9 @@ function News() {
             This is a brief description of the latest news. Lorem ipsum dolor
             sit amet, consectetur adipiscing elit.
           </p>
-          <button className="news-btn">Read More</button>
+          <a href="https://www.tumblr.com/blog/tessat-space" target="blank">
+            <button className="news-btn">Read More</button>
+          </a>
         </div>
       </div>
     </div>

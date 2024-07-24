@@ -24,7 +24,7 @@
   padding: 10px 0;
   border-radius: 5px;
   position: absolute;
-  bottom: 50px;
+  bottom: 100px;
   margin: 0 auto; /* Center horizontally */
   overflow-x: auto; /* Enable horizontal scrolling */
   white-space: nowrap; /* Prevent line breaks */
@@ -60,7 +60,7 @@
     overflow-x: auto; /* Enable horizontal scrolling */
     text-align: center;
     padding: 5px;
-    bottom: 10px;
+  bottom: 100px;
   }
 
   .navbar110 li {
