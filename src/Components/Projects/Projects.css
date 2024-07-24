@@ -3,6 +3,8 @@
   padding: 10px; /* Padding around the content */
   padding-top: 50px;
   text-align: center; /* Center align content */
+    background-color: black;
+  opacity: 0.8;
 }
 .project-btn {
   background-color: #ff6f61; /* Button background color */

@@ -50,8 +50,8 @@ const Contact = () => {
             <div className="information">
               <img src={location} className="icon" alt="Location" />
               <p>
-                Electronics and Communication Dept Saintgits College of
-                Engineering Kottukulam Hills, Pathamuttam P. O Kerala 686532
+                Cabin No.3 SCIElab Ramaujan Block Saintgits College of Engineering
+                Kottukulam Hills, Pathamuttam P. O Kerala 686532
               </p>
             </div>
             <div className="information">

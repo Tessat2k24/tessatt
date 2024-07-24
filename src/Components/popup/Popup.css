@@ -14,7 +14,6 @@
 .image {
   max-width: 100%; /* Ensure the image does not exceed the container */
   max-height: 50vh; /* Limit image height to leave space for navbar */
-  margin-bottom: 20px; /* Space between image and navbar */
 }
 
 .navbar110 {
