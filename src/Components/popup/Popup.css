@@ -1,49 +1,71 @@
 .popup {
   background-color: black;
-  min-height: 100vh; /* Minimum height of the viewport */
-  width: 100%; /* Full width of the viewport */
+  min-height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column; /* Arrange children in a column */
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-  padding: 20px; /* Create space between content and edges */
-  position: relative; /* Ensure the container is positioned relative */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
   overflow: hidden;
 }
 
 .image {
-  max-width: 100%; /* Ensure the image does not exceed the container */
-  max-height: 50vh; /* Limit image height to leave space for navbar */
+  max-width: 100%;
+  max-height: 50vh;
 }
 
 .navbar110 {
   display: flex;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-  background-color: rgba(255, 255, 255, 0.1); /* Light background with transparency */
-  padding: 10px 0; /* Padding above and below links */
-  border-radius: 5px; /* Rounded corners */
-  position: absolute; /* Position the navbar relative to .popup */
-  bottom: 20px; /* Distance from the bottom */
-  margin:20px ;
-  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 0;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 50px;
+  margin: 0 auto; /* Center horizontally */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks */
 }
 
-.navbar110 a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 8px 15px; /* Padding around each link */
+.navbar110 ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+.navbar110 li {
+  margin: 0 10px;
+  color: white; /* Text color */
+  font-size: 18px; /* Font size */
+  cursor: pointer; /* Add cursor pointer */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.navbar110 li:hover {
+  color: #fff; /* Change text color on hover */
+  background-color: rgba(255, 255, 255, 0.2); /* Light background color on hover */
+  border-radius: 3px; /* Rounded corners on hover */
 }
 
 @media screen and (max-width: 600px) {
   .navbar110 {
-    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+    flex-wrap: nowrap; /* Ensure links do not wrap */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    text-align: center;
+    padding: 5px;
+    bottom: 10px;
   }
 
-  .navbar110 a {
-    margin: 5px; /* Adjust margin for smaller screens */
-      font-size: 15px;
-  padding: 2px; /* Padding around each link */
+  .navbar110 li {
+    margin: -2px;
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 5px; /* Adjust padding for smaller screens */
   }
 }

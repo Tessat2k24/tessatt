@@ -29,8 +29,8 @@ const Gallery = () => {
   };
 
   return (
-    <div className="gallery-container">
-      <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white mb-5">
+    <div className="gallery-container" id="gallery">
+      <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white mb-4">
         Gallery{" "}
       </h1>
       <Masonry columnsCount={3} gutter="10px" className="gallery">

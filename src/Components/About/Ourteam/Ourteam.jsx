@@ -256,10 +256,6 @@
 
 // export default Ourteam;
 
-
-
-
-
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -279,9 +275,6 @@ import navneeth from "./ProfileImages/Navneeth.jpeg";
 import bijin from "./ProfileImages/Bijin.jpeg";
 import bino from "./ProfileImages/Bino.jpeg";
 // import blesson from "./ProfileImages/Blesson.jpeg"
-
-
-
 
 const Ourteam = () => {
   const teamMembers = [
@@ -331,21 +324,24 @@ const Ourteam = () => {
     {
       name: "Bijin Kurian",
       role: "Member",
-      image:bijin,
+      image: bijin,
       socialLinks: {
         email: "bijinkalayil@gmail.com",
         instagram: "https://www.instagram.com/bijin_kk?igsh=bHNhb3R3MWZtNnp2",
-        linkedin: "https://www.linkedin.com/in/bijin-kurian-306051252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        linkedin:
+          "https://www.linkedin.com/in/bijin-kurian-306051252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
     },
     {
       name: "Bino J Panicker",
       role: "Member",
-      image:bino ,
+      image: bino,
       socialLinks: {
         email: "binojp2005@gmail.com",
-        instagram: "https://www.instagram.com/binojpanicker?igsh=OXhhN2ZpOTRvNXho",
-        linkedin: "https://www.linkedin.com/in/bino-j-panicker-820937257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        instagram:
+          "https://www.instagram.com/binojpanicker?igsh=OXhhN2ZpOTRvNXho",
+        linkedin:
+          "https://www.linkedin.com/in/bino-j-panicker-820937257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
     },
     // {

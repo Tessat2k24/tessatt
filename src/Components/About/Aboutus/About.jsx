@@ -3,7 +3,7 @@ import "./About.css"; // Assuming you have a CSS file for styling
 
 const About = () => {
   return (
-    <div className="about-us-section">
+    <div className="about-us-section" id="about">
       <h2 className="about-us-heading">About Us</h2>
       <div className="about-us-description-container">
         <p className="about-us-description">

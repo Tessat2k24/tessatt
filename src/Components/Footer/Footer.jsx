@@ -27,16 +27,12 @@ const Footer = () => {
           <div>
             <ul>
               <li href="#">binojp2005@gmail.com</li>
-            <li href="">+91 9037331907</li>
-            <li
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Electronics and Communication Dept Saintgits College of
-              Engineering Kottukulam Hills, Pathamuttam P. O Kerala 686532{" "}
+              <li href="">+91 9037331907</li>
+              <li href="" target="_blank" rel="noopener noreferrer">
+                Cabin No.3 SCIE lab Ramaujan Block Saintgits College of
+                Engineering Kottukulam Hills, Pathamuttam P. O Kerala 686532
               </li>
-              </ul>
+            </ul>
           </div>
           <div className="social-links">
             <a

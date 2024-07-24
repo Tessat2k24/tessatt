@@ -1,6 +1,6 @@
 /* News.css */
 .news-section {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
   margin: 20px; /* Center the section horizontally */
   max-width: 1200px;
@@ -33,13 +33,13 @@
 
 .news-description {
   font-size: 1.1rem;
-  color: #333;
+  color: #000;
   margin-bottom: 20px;
 }
 
 .news-btn {
   background-color: #ff6f61;
-  color: white;
+  color: black;
   border: none;
   padding: 10px 20px;
   font-size: 1rem;

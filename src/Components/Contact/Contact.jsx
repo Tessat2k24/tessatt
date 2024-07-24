@@ -38,7 +38,7 @@ const Contact = () => {
     };
   }, []);
   return (
-    <div className="container220">
+    <div className="container220" id="contact">
       <div className="form">
         <div className="contact-info">
           <h3 className="title">Let's get in touch</h3>
@@ -50,7 +50,7 @@ const Contact = () => {
             <div className="information">
               <img src={location} className="icon" alt="Location" />
               <p>
-                Cabin No.3 SCIElab Ramaujan Block Saintgits College of Engineering
+                Cabin No.3 SCIE lab Ramaujan Block Saintgits College of Engineering
                 Kottukulam Hills, Pathamuttam P. O Kerala 686532
               </p>
             </div>

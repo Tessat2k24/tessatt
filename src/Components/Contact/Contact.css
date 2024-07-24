@@ -1,14 +1,10 @@
-
 .container220 {
   position: relative;
   width: 100%;
-  /* min-height: 100vh; */
   padding: 2rem;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-top:50px; */
 }
 
 .form {
@@ -180,19 +176,23 @@ textarea.input {
 
 .information {
   display: flex;
+  align-items: center;
   color: #555;
   margin: 0.7rem 0;
-  align-items: center;
   font-size: 0.95rem;
 }
 
-.information i,p{
-  color: #000;
+.information img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.7rem;
+  flex-shrink: 0;
 }
 
-.icon {
-  width: 24px;
-  margin-right: 0.7rem;
+.information p {
+  color: #555;
+  margin: 0;
+  flex: 1;
 }
 
 .social-media {
@@ -223,12 +223,14 @@ textarea.input {
 .social-icons a:hover {
   transform: scale(1.05);
 }
+
 .social-icon {
-    width: 25px;
-    top: 5px;
-    position: relative;
-    left: 5px;
+  width: 25px;
+  top: 5px;
+  position: relative;
+  left: 5px;
 }
+
 @media (max-width: 850px) {
   .form {
     grid-template-columns: 1fr;
@@ -247,12 +249,6 @@ textarea.input {
     right: 70px;
   }
 
-  .square {
-    transform: translate(140%, 43%);
-    height: 350px;
-  }
-
-
   .text {
     margin: 1rem 0 1.5rem 0;
   }
@@ -260,14 +256,7 @@ textarea.input {
   .social-media {
     padding: 1.5rem 0 0 0;
   }
-  .social-icon {
-    width: 25px;
-    top: 5px;
-    position: relative;
-    left: 5px;
 }
-}
-
 @media (max-width: 480px) {
   .container {
     padding: 1.5rem;
