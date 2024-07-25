@@ -19,11 +19,9 @@
 }
 
 .contact-form {
-    background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   position: relative;
 }
-
-
 
 form {
   padding: 2.3rem 2.2rem;
@@ -126,7 +124,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-    background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   top: 50%;
   transform: translateY(-50%);
 }
@@ -159,8 +157,7 @@ textarea.input {
 
 .contact-info .title {
   color: #000;
-    overflow: hidden;
-
+  overflow: hidden;
 }
 
 .text {
@@ -204,8 +201,8 @@ textarea.input {
   overflow: hidden;
 }
 .social-icon:hover {
-border: 1px solid black;
-padding: 2px;
+  border: 1px solid black;
+  padding: 2px;
 }
 .social-icons a {
   width: 35px;
@@ -256,7 +253,6 @@ padding: 2px;
     display: none;
   }
 
-
   form,
   .contact-info {
     padding: 1.7rem 1.6rem;
@@ -294,5 +290,5 @@ padding: 2px;
     top: 2px;
     position: relative;
     left: 2px;
-}
+  }
 }

@@ -5,11 +5,7 @@ width: 100%;
 
 body {
   background-image: url("/src/assets/Artboard 3.jpg");
-  background-size: cover;
-  background-position: center;
-  margin: 0; 
+  background-size: contain;
     background-size: 100% auto; 
-
-  padding: 0;
   overflow: none;
 }

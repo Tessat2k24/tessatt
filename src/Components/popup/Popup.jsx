@@ -21,7 +21,7 @@ function Popup() {
               to="about"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-40}
               duration={500}
               onClick={toggleMenu}
             >
@@ -34,7 +34,7 @@ function Popup() {
               to="projects"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-40}
               duration={500}
               onClick={toggleMenu}
             >
@@ -47,7 +47,7 @@ function Popup() {
               to="news"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-40}
               duration={500}
               onClick={toggleMenu}
             >
@@ -60,7 +60,7 @@ function Popup() {
               to="gallery"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-40}
               duration={500}
               onClick={toggleMenu}
             >
@@ -73,7 +73,7 @@ function Popup() {
               to="contact"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-40}
               duration={500}
               onClick={toggleMenu}
             >

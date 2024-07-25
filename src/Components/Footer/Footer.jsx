@@ -39,7 +39,7 @@ const Footer = () => {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-40}
                 duration={500}
                 onClick={toggleMenu}
               >
@@ -52,7 +52,7 @@ const Footer = () => {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-40}
                 duration={500}
                 onClick={toggleMenu}
               >
@@ -65,7 +65,7 @@ const Footer = () => {
                 to="news"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-40}
                 duration={500}
                 onClick={toggleMenu}
               >
@@ -78,7 +78,7 @@ const Footer = () => {
                 to="gallery"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-40}
                 duration={500}
                 onClick={toggleMenu}
               >
@@ -91,7 +91,7 @@ const Footer = () => {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-40}
                 duration={500}
                 onClick={toggleMenu}
               >

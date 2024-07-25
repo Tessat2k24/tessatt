@@ -40,7 +40,7 @@ function Navbar() {
             to="about"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-40}
             duration={500}
             onClick={toggleMenu}
           >
@@ -53,7 +53,7 @@ function Navbar() {
             to="projects"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-40}
             duration={500}
             onClick={toggleMenu}
           >
@@ -66,7 +66,7 @@ function Navbar() {
             to="news"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-40}
             duration={500}
             onClick={toggleMenu}
           >
@@ -79,7 +79,7 @@ function Navbar() {
             to="gallery"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-40}
             duration={500}
             onClick={toggleMenu}
           >
@@ -92,7 +92,7 @@ function Navbar() {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-40}
             duration={500}
             onClick={toggleMenu}
           >

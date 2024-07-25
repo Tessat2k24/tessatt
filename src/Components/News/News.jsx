@@ -34,11 +34,11 @@ function News() {
             Our Latest News{" "}
           </h1>{" "}
           <p className="news-description">
-            This is a brief description of the latest news. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit.
+            Want to know what’s new? We’ve got exciting updates! Click See More
+            to dive into the latest news and happenings.
           </p>
           <a href="https://www.tumblr.com/blog/tessat-space" target="blank">
-            <button className="news-btn">Read More</button>
+            <button className="news-btn">See More</button>
           </a>
         </div>
       </div>

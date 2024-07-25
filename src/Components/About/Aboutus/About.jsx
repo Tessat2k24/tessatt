@@ -7,7 +7,7 @@ const About = () => {
       <h2 className="about-us-heading">About Us</h2>
       <div className="about-us-description-container">
         <p className="about-us-description">
-          Tipu-Electronics Saintgits SATellite (TESSAT) is a society based at
+          Tipu-Electronics Students SATellite (TESSAT) is a society based at
           Saintgits College of Engineering. We specialize in developing
           innovative and indigenous satellite technology, with a focus on CANSAT
           projects. TESSAT also engages in hands-on projects related to

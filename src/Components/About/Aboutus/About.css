@@ -16,7 +16,7 @@
 .about-us-description {
   max-width: 800px; /* Adjust max-width as needed */
   margin: 0 auto; /* Center the description horizontally */
-  text-align: left; /* Align text left within the description */
+  text-align: center; /* Align text left within the description */
   font-size: 1.1rem;
   line-height: 1.6;
   color: #fff; /* Adjust color to fit your theme */

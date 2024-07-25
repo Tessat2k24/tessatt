@@ -77,6 +77,8 @@ cursor: pointer;
 
   nav ul li {
     margin: 10px 25px;
+color: #000;
+
   }
 }
 
@@ -87,6 +89,9 @@ cursor: pointer;
 
   nav ul li {
     margin: 10px 25px;
+            color:#000;
+
+
   }
 }
 
@@ -110,6 +115,7 @@ cursor: pointer;
   nav ul li {
     display: block;
     margin: 25px 40px;
+    color:#fff;
   }
 
   .menu-icon {
