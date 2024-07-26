@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <div className="project-page" id="projects">
       <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white mb-4">
-Our Works      </h1>{" "}
+Projects      </h1>{" "}
       <div className="project-container">
         <div className="project-item">
           <div className="project-content">

@@ -100,10 +100,12 @@ textarea.input {
 }
 
 .btn:hover {
-  background-color: transparent;
+  background-color: #3b3b3b;
   color: #fff;
 }
-
+.result{
+  margin-left: 10px;
+}
 .input-container span {
   position: absolute;
   top: 0;
@@ -243,6 +245,7 @@ textarea.input {
   .social-media {
     padding: 1.5rem 0 0 0;
   }
+
 }
 @media (max-width: 480px) {
   .container {
@@ -291,4 +294,18 @@ textarea.input {
     position: relative;
     left: 2px;
   }
+}
+@media (max-width: 447px) {
+    .result{
+      display: inline;
+      font-size: 10px;
+      font-weight: 900;
+}
+}
+@media (max-width: 330px) {
+    .result{
+      display: inline;
+      font-size: 9px;
+      font-weight: 900;
+}
 }

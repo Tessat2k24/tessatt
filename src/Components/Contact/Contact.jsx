@@ -37,6 +37,32 @@ const Contact = () => {
       });
     };
   }, []);
+
+  //for senting email
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "817a0c95-3e69-44fb-8760-30cba1559323");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
   return (
     <div className="container220" id="contact">
       <div className="form">
@@ -96,48 +122,48 @@ const Contact = () => {
         </div>
 
         <div className="contact-form">
-          <form action="index.html" autoComplete="off">
+          <form action="index.html" autoComplete="off" onSubmit={onSubmit}>
             <h3 className="title">Contact us</h3>
             <div className="input-container">
               <input
                 type="text"
                 name="name"
                 className="input"
+                placeholder="Name"
                 ref={(el) => (inputRefs.current[0] = el)}
+                required
               />
-              <label htmlFor="">Name</label>
-              <span>Name</span>
             </div>
             <div className="input-container">
               <input
                 type="email"
                 name="email"
                 className="input"
+                placeholder="Email"
                 ref={(el) => (inputRefs.current[1] = el)}
+                required
               />
-              <label htmlFor="">Email</label>
-              <span>Email</span>
             </div>
             <div className="input-container">
               <input
                 type="tel"
                 name="phone"
                 className="input"
+                placeholder="Phone"
                 ref={(el) => (inputRefs.current[2] = el)}
               />
-              <label htmlFor="">Phone</label>
-              <span>Phone</span>
             </div>
             <div className="input-container textarea">
               <textarea
                 name="message"
                 className="input"
+                placeholder="Message"
                 ref={(el) => (inputRefs.current[3] = el)}
+                required
               ></textarea>
-              <label htmlFor="">Message</label>
-              <span>Message</span>
             </div>
             <input type="submit" value="Send" className="btn" />
+            <span className="result">{result}</span>
           </form>
         </div>
       </div>

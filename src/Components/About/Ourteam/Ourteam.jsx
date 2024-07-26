@@ -149,11 +149,11 @@ const Ourteam = () => {
       },
     },
     {
-      name: "Gopika R",
+      name: "Gopika S",
       role: "Member",
       image: gopika,
       socialLinks: {
-        email: "",
+        email: "gopikas.ec2226@saintgits.org",
         instagram: "https://www.instagram.com/gopsiam?igsh=aXVrdXBwNGFqOWpw",
         linkedin:
           "https://www.linkedin.com/in/gopika-s-prolinku?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
