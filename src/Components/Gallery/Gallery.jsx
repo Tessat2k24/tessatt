@@ -58,7 +58,7 @@ const Gallery = () => {
         </div>
       )}
       <button className="gallery-btn">
-        <a href="./gallery.html" rel="noopnernore">See More</a>
+        <a href="/gallery.html" rel="noopnernore">See More</a>
       </button>
     </div>
   );
