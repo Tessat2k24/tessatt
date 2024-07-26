@@ -36,7 +36,7 @@ const Maingallery = () => {
     <div className={styles.maincontainer}>
       {/* Navigation bar */}
       <div className={styles.nav}>
-        <a href="index.html">
+        <a href="/index.html">
           <img src={returnIcon} className={styles.returnIcon} />
           Return to Home
         </a>
