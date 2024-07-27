@@ -1,11 +1,13 @@
-.app{
-    background-color: rgba(0,0,0,0.8);
-width: 100%;
-}
-
 body {
   background-image: url("/src/assets/Artboard 3.jpg");
-  background-size: contain;
-    background-size: 100% auto; 
-  overflow: none;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Optional: To fix the background image while scrolling */
+  background-repeat: no-repeat; /* Optional: Prevent the image from repeating */
+}
+
+.app {
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  min-height: 100vh; /* Ensure .app takes at least the full viewport height */
 }

@@ -25,12 +25,12 @@
 .slick-next {
   right: 10px; /* Adjust position */
 }
-
-/* Hover effect */
-.slick-prev:hover,
-.slick-next:hover {
-  background-color: #555; /* Darker background on hover */
+.role{
+  font-size: small;
+  font-weight: 900;
 }
+/* Hover effect */
+
 
 /* Disable default outline */
 .slick-prev:focus,

@@ -6,9 +6,16 @@ import menu_icon from "/src/assets/menu.svg";
 
 function Navbar() {
   const [Sticky, setSticky] = useState(false);
+
+    const getThreshold = () => {
+      // Adjust the threshold based on window height
+      return window.innerHeight <= 500 ? 540 : 700;
+    };
   useEffect(() => {
+
+        const threshold = getThreshold();
     window.addEventListener("scroll", () => {
-      window.scrollY > 600 ? setSticky(true) : setSticky(false);
+      window.scrollY > threshold ? setSticky(true) : setSticky(false);
     });
   }, []);
 
@@ -40,7 +47,7 @@ function Navbar() {
             to="about"
             spy={true}
             smooth={true}
-            offset={-40}
+            offset={1}
             duration={500}
             onClick={toggleMenu}
           >

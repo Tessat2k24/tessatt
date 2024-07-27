@@ -17,7 +17,7 @@ function News() {
   return (
     <div className="newscontainer" id="news">
       <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white mb-4">
-        News{" "}
+        News & Updates{" "}
       </h1>
       <div className="news-section">
         <div

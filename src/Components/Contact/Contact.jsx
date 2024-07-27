@@ -82,7 +82,7 @@ const Contact = () => {
             </div>
             <div className="information">
               <img src={email} className="icon" alt="Email" />
-              <p>binojp2005@gmail.com</p>
+              <p>our_team@tessat.space</p>
             </div>
             <div className="information">
               <img src={phone} className="icon" alt="Phone" />

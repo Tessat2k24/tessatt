@@ -39,7 +39,7 @@ const Footer = () => {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-40}
+                offset={1}
                 duration={500}
                 onClick={toggleMenu}
               >
@@ -103,12 +103,8 @@ const Footer = () => {
         <div className="contact-info110">
           <div>
             <ul>
-              <li href="#">binojp2005@gmail.com</li>
-              <li href="">+91 9037331907</li>
-              <li href="" target="_blank" rel="noopener noreferrer">
-                Cabin No.3 SCIE lab Ramaujan Block Saintgits College of
-                Engineering Kottukulam Hills, Pathamuttam P. O Kerala 686532
-              </li>
+              <li >our_team@tessat.space</li>
+              <li >+91 9037331907</li>
             </ul>
           </div>
           <div className="social-links">

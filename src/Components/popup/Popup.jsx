@@ -2,16 +2,35 @@ import React from "react";
 import { Link } from "react-scroll"; // Import Link from react-scroll for smooth scrolling
 import "./Popup.css";
 import logo from "./logo.svg";
-
+import { useEffect,useRef } from "react";
 function Popup() {
-  // Function to toggle the menu (assuming you have defined this elsewhere)
+  const popupRef = useRef(null);
+  const magicRef = useRef(null);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      if (popupRef.current && magicRef.current) {
+        const rect = popupRef.current.getBoundingClientRect();
+        const magicWHalf = magicRef.current.offsetWidth / 2;
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        magicRef.current.style.left = `${x - magicWHalf}px`;
+        magicRef.current.style.top = `${y - magicWHalf}px`;
+      }
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
   const toggleMenu = () => {
-    // Implement your toggle menu logic here
     console.log("Toggle menu function");
   };
 
   return (
-    <div className="popup" id="home">
+    <div className="popup" id="home" ref={popupRef}>
+      <div className="magic" ref={magicRef}></div>
+
       <img className="image" src={logo} alt="Logo" />
       <div className="navbar110">
         <ul>
@@ -21,7 +40,7 @@ function Popup() {
               to="about"
               spy={true}
               smooth={true}
-              offset={-40}
+              offset={1}
               duration={500}
               onClick={toggleMenu}
             >
