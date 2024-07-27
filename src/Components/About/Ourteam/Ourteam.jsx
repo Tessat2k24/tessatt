@@ -50,7 +50,7 @@ const Ourteam = () => {
     },
     {
       name: "Bijin Kurian",
-      role: "Chief Managing Director",
+      role: "Managing Director",
       image: bijin,
       socialLinks: {
         email: "bijinkalayil@gmail.com",
@@ -119,7 +119,7 @@ const Ourteam = () => {
     },
     {
       name: "Nobin Jo Jaime Jose",
-      role: "Communicatins Engineer Lead",
+      role: "Communications Engineer Lead",
       image: nobin,
       socialLinks: {
         email: "nobinjo431@gmail.com",

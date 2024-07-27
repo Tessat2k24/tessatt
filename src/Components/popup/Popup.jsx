@@ -2,35 +2,13 @@ import React from "react";
 import { Link } from "react-scroll"; // Import Link from react-scroll for smooth scrolling
 import "./Popup.css";
 import logo from "./logo.svg";
-import { useEffect,useRef } from "react";
 function Popup() {
-  const popupRef = useRef(null);
-  const magicRef = useRef(null);
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      if (popupRef.current && magicRef.current) {
-        const rect = popupRef.current.getBoundingClientRect();
-        const magicWHalf = magicRef.current.offsetWidth / 2;
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        magicRef.current.style.left = `${x - magicWHalf}px`;
-        magicRef.current.style.top = `${y - magicWHalf}px`;
-      }
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
-
   const toggleMenu = () => {
     console.log("Toggle menu function");
   };
 
   return (
-    <div className="popup" id="home" ref={popupRef}>
-      <div className="magic" ref={magicRef}></div>
-
+    <div className="popup" id="home">
       <img className="image" src={logo} alt="Logo" />
       <div className="navbar110">
         <ul>
