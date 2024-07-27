@@ -103,8 +103,8 @@ const Footer = () => {
         <div className="contact-info110">
           <div>
             <ul>
-              <li >our_team@tessat.space</li>
-              <li >+91 9037331907</li>
+              <li>ceo@tessat.space</li>
+              <li>+91 9037331907</li>
             </ul>
           </div>
           <div className="social-links">
