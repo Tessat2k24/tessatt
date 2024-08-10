@@ -33,7 +33,7 @@ const Maingallery = () => {
   };
 
   return (
-    <div className={styles.maincontainer}>
+    <div className= {styles.app}>
       {/* Navigation bar */}
       <div className={styles.nav}>
         <a href="/index.html">
@@ -73,8 +73,9 @@ const Maingallery = () => {
     </div>
   );
 };
+export default Maingallery;
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById("galleryroot")).render(
   <React.StrictMode>
     <Maingallery />
   </React.StrictMode>
