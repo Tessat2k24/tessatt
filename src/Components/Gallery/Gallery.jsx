@@ -9,57 +9,148 @@ import img4 from "/src/assets/Gallery/img4.jpeg";
 import img5 from "/src/assets/Gallery/img5.jpeg";
 import img6 from "/src/assets/Gallery/img6.jpeg";
 import img7 from "/src/assets/Gallery/img7.jpeg";
+import team from "/src/assets/Gallery/team.jpeg";
+import img8 from "/src/assets/Gallery/img8.jpeg";
+import img9 from "/src/assets/Gallery/img9.jpeg";
+import img10 from "/src/assets/Gallery/img10.jpeg";
+ 
+import prevIcon from "/src/assets/prev.svg";
+import nextIcon from "/src/assets/next.svg";
 
-const images = [
-  // { id: 1, src: img1, alt: "Image 1" },
-  { id: 2, src: img2, alt: "Image 2" },
-  { id: 3, src: img3, alt: "Image 3" },
-  { id: 4, src: img4, alt: "Image 4" },
-  // { id: 5, src: img5, alt: "Image 5" },
-  { id: 6, src: img7, alt: "Image 6" },
+const photo = [
+  {
+    id: 1,
+    images: [img8, img7, team,img3,img4,img6],
+  },
+];
+
+const albums = [
+  {
+    id: 1,
+    name: "Team",
+    images: [team,img8, img10],
+  },
+  {
+    id: 2,
+    name: "Orientation",
+    images: [img1, img2, img3, img4, img5, img6],
+  },
+  {
+    id: 3,
+    name: "Works",
+    images: [img9],
+  },
 ];
 
 const Gallery = () => {
+  const [isAlbumPopupOpen, setIsAlbumPopupOpen] = useState(false);
+  const [selectedAlbum, setSelectedAlbum] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleAlbumClick = (album) => {
+    setSelectedAlbum(album);
+    setSelectedImage(album.images[0]);
+  };
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
   };
 
-  const handleCloseModal = () => {
+  const handleNextPrev = (direction) => {
+    const currentIndex = selectedAlbum.images.indexOf(selectedImage);
+    const newIndex =
+      (currentIndex + direction + selectedAlbum.images.length) %
+      selectedAlbum.images.length;
+    setSelectedImage(selectedAlbum.images[newIndex]);
+  };
+
+  const handleClosePopup = () => {
+    setIsAlbumPopupOpen(false);
+    setSelectedAlbum(null);
     setSelectedImage(null);
   };
 
   return (
     <div className="gallery-container" id="gallery">
       <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white mb-4">
-        Gallery{" "}
+        Gallery
       </h1>
       <Masonry columnsCount={2} gutter="10px" className="gallery">
-        {images.map((image) => (
+        {photo[0].images.map((image, index) => (
           <img
-            key={image.id}
-            src={image.src}
-            alt={image.alt}
+            key={index}
+            src={image}
+            alt={`Image ${index + 1}`}
             className="gallery-item"
-            onClick={() => handleImageClick(image)}
           />
         ))}
       </Masonry>
 
-      {selectedImage && (
-        <div className="modal" onClick={handleCloseModal}>
-          <span className="modal-close">&times;</span>
-          <img
-            src={selectedImage.src}
-            alt={selectedImage.alt}
-            className="modal-content"
-          />
+      <button className="gallery-btn" onClick={() => setIsAlbumPopupOpen(true)}>
+        See More
+      </button>
+
+      {isAlbumPopupOpen && (
+        <div className="album-popup">
+          <span className="album-popup-close" onClick={handleClosePopup}>
+            &times;
+          </span>
+          <div className="album-popup-content">
+            {!selectedAlbum && (
+              <div className="albums-grid-container">
+
+              <div className="albums-grid">
+                {albums.map((album) => (
+                  <div
+                    key={album.id}
+                    className="album-item"
+                    onClick={() => handleAlbumClick(album)}
+                  >
+                    <h2>{album.name}</h2>
+                    <img src={album.images[0]} alt={album.name} />
+                  </div>
+                ))}
+                </div>
+                </div>
+            )}
+            {selectedAlbum && selectedImage && (
+              <div className="album-modal">
+                <img
+                  src={prevIcon}
+                  className="prev"
+                  onClick={() => handleNextPrev(-1)}
+                  alt="Previous"
+                />
+
+                <img
+                  src={selectedImage}
+                  alt={selectedAlbum.name}
+                  className="album-modal-content"
+                />
+                <img
+                  src={nextIcon}
+                  className="next"
+                  onClick={() => handleNextPrev(1)}
+                  alt="Next"
+                />
+                <div className="thumbnails">
+                  {selectedAlbum.images.map((image, index) => (
+                    <img
+                      key={index}
+                      src={image}
+                      alt={`Thumbnail ${index + 1}`}
+                      className={`thumbnail ${
+                        image === selectedImage ? "active" : ""
+                      }`}
+                      onClick={() => handleImageClick(image)}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       )}
-      {/* <button className="gallery-btn">
-        <a href="/gallery.html" rel="noopnernore">See More</a>
-      </button> */}
     </div>
   );
 };
