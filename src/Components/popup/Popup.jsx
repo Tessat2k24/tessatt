@@ -1,11 +1,27 @@
-import React from "react";
-import { Link } from "react-scroll"; // Import Link from react-scroll for smooth scrolling
+import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import "./Popup.css";
 import logo from "./logo.svg";
+import recruitmentImage from "./recruitment-poster.jpeg"; // Replace with your image path
+
 function Popup() {
+  const [isOverlayOpen, setIsOverlayOpen] = useState(true);
+
   const toggleMenu = () => {
     console.log("Toggle menu function");
   };
+
+  const closeOverlay = () => {
+    setIsOverlayOpen(false);
+  };
+
+  useEffect(() => {
+    if (isOverlayOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  }, [isOverlayOpen]);
 
   return (
     <div className="popup" id="home">
@@ -77,9 +93,48 @@ function Popup() {
               Contact
             </Link>
           </li>
-        </ul>{" "}
-        {/* Corrected: Closing tag for <ul> */}
+        </ul>
       </div>
+      {isOverlayOpen && (
+        <div className="overlay">
+          <button className="close-button" onClick={closeOverlay}>
+            X
+          </button>
+          <div className="overlay-content">
+            <img
+              className="recruitment-image"
+              src={recruitmentImage}
+              alt="Recruitment"
+            />
+            <div className="text-content">
+              <h1>Recruitment is Now Open</h1>
+              <ul>
+                <li>
+                  This Recruitment is only OPEN for the students of Saintgits
+                  Group of Colleges
+                </li>
+                <li>
+                  There will be an interview process before the final selection.
+                </li>
+                <li>
+                  We're seeking dedicated individuals who are passionate about
+                  hands-on work and are committed to making a meaningful
+                  contribution.
+                </li>
+                <li>
+                  There will be some project-related expenses that members will
+                  be expected to contribute towards.
+                </li>
+              </ul>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfB2IQ_foy8Vg9aymwXCQjpHAY2rBbLRMrN0vx9FqjeTEVfpg/viewform"
+                target="blank"
+              >
+              <button className="apply-button">Apply Now</button></a>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
