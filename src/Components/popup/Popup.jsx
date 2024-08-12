@@ -110,19 +110,19 @@ function Popup() {
               <h1>Recruitment is Now Open</h1>
               <ul>
                 <li>
-                  This Recruitment is only OPEN for the students of Saintgits
+                  # This Recruitment is only OPEN for the students of Saintgits
                   Group of Colleges
                 </li>
                 <li>
-                  There will be an interview process before the final selection.
+                  # There will be an interview process before the final selection.
                 </li>
                 <li>
-                  We're seeking dedicated individuals who are passionate about
+                 # We're seeking dedicated individuals who are passionate about
                   hands-on work and are committed to making a meaningful
                   contribution.
                 </li>
                 <li>
-                  There will be some project-related expenses that members will
+                  # There will be some project-related expenses that members will
                   be expected to contribute towards.
                 </li>
               </ul>
@@ -130,7 +130,8 @@ function Popup() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfB2IQ_foy8Vg9aymwXCQjpHAY2rBbLRMrN0vx9FqjeTEVfpg/viewform"
                 target="blank"
               >
-              <button className="apply-button">Apply Now</button></a>
+                <button className="apply-button">Apply Now</button>
+              </a>
             </div>
           </div>
         </div>
