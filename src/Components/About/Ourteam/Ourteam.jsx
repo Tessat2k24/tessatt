@@ -268,7 +268,7 @@ const Ourteam = () => {
     <>
       <section className="border-b" style={{ borderColor: "#333" }}>
         <div className="container px-3 py-3 pb-0 mx-auto">
-          <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
+          <h1 className="text-2xl font-semibold text-center text-white capitalize lg:text-3xl ">
             EXECUTIVE PANEL{" "}
           </h1>
 
@@ -285,11 +285,11 @@ const Ourteam = () => {
                     alt={member.name}
                   />
 
-                  <h1 className="mt-4 font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">
+                  <h1 className="mt-4 font-semibold text-white capitalize ">
                     {member.name}
                   </h1>
 
-                  <p className="mt-2 text-gray-10 capitalize dark:text-gray-10 group-hover:text-gray-10 role">
+                  <p className="mt-2 text-white capitalize ">
                     {member.role}
                   </p>
 
@@ -337,7 +337,7 @@ const Ourteam = () => {
       </section>
       <section className="border-b" style={{ borderColor: "#333" }}>
         <div className="container px-3 py-3 pb-0 mx-auto">
-          <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
+          <h1 className="text-2xl font-semibold text-center text-white capitalize lg:text-3xl ">
             MEMBERS{" "}
           </h1>
 
@@ -354,7 +354,7 @@ const Ourteam = () => {
                     alt={member.name}
                   />
 
-                  <h1 className="mt-4 font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">
+                  <h1 className="mt-4 font-semibold text-white capitalize ">
                     {member.name}
                   </h1>
 

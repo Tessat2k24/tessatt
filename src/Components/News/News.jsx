@@ -16,7 +16,7 @@ function News() {
 
   return (
     <div className="newscontainer" id="news">
-      <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white mb-4">
+      <h1 className="text-2xl font-semibold text-center capitalize lg:text-3xl  mb-4">
         News & Updates{" "}
       </h1>
       <div className="news-section">
@@ -30,7 +30,7 @@ function News() {
           </a>
         </div>
         <div className="news-content">
-          <h1 className="text-1xl font-semibold text-center text-gray-500 capitalize lg:text-2xl dark:text-black mb-4">
+          <h1 className="text-1xl font-semibold text-center text-black capitalize lg:text-2xl  mb-4">
             Our Latest News{" "}
           </h1>{" "}
           <p className="news-description">

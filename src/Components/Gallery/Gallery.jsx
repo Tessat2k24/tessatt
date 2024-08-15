@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Masonry from "react-responsive-masonry";
 import "./Gallery.css";
 
@@ -13,14 +13,15 @@ import team from "/src/assets/Gallery/team.jpeg";
 import img8 from "/src/assets/Gallery/img8.jpeg";
 import img9 from "/src/assets/Gallery/img9.jpeg";
 import img10 from "/src/assets/Gallery/img10.jpeg";
- 
+
 import prevIcon from "/src/assets/prev.svg";
 import nextIcon from "/src/assets/next.svg";
+import backIcon from "/src/assets/back.svg";
 
 const photo = [
   {
     id: 1,
-    images: [img8, img7, team,img3,img4,img6],
+    images: [img8, img7, team, img3, img4, img6],
   },
 ];
 
@@ -28,7 +29,7 @@ const albums = [
   {
     id: 1,
     name: "Team",
-    images: [team,img8, img10],
+    images: [team, img8, img10],
   },
   {
     id: 2,
@@ -46,6 +47,25 @@ const Gallery = () => {
   const [isAlbumPopupOpen, setIsAlbumPopupOpen] = useState(false);
   const [selectedAlbum, setSelectedAlbum] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+
+  useEffect(() => {
+    if (isAlbumPopupOpen) {
+      const currentScroll = window.scrollY;
+      setScrollPosition(currentScroll);
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${currentScroll}px`;
+      document.body.style.width = "100%";
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.width = "";
+      document.body.style.overflow = "";
+      window.scrollTo(0, scrollPosition);
+    }
+  }, [isAlbumPopupOpen]);
 
   const handleAlbumClick = (album) => {
     setSelectedAlbum(album);
@@ -72,7 +92,7 @@ const Gallery = () => {
 
   return (
     <div className="gallery-container" id="gallery">
-      <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white mb-4">
+      <h1 className="text-2xl font-semibold text-center capitalize lg:text-3xl mb-4">
         Gallery
       </h1>
       <Masonry columnsCount={2} gutter="10px" className="gallery">
@@ -96,24 +116,7 @@ const Gallery = () => {
             &times;
           </span>
           <div className="album-popup-content">
-            {!selectedAlbum && (
-              <div className="albums-grid-container">
-
-              <div className="albums-grid">
-                {albums.map((album) => (
-                  <div
-                    key={album.id}
-                    className="album-item"
-                    onClick={() => handleAlbumClick(album)}
-                  >
-                    <h2>{album.name}</h2>
-                    <img src={album.images[0]} alt={album.name} />
-                  </div>
-                ))}
-                </div>
-                </div>
-            )}
-            {selectedAlbum && selectedImage && (
+            {selectedAlbum && selectedImage ? (
               <div className="album-modal">
                 <img
                   src={prevIcon}
@@ -133,6 +136,7 @@ const Gallery = () => {
                   onClick={() => handleNextPrev(1)}
                   alt="Next"
                 />
+
                 <div className="thumbnails">
                   {selectedAlbum.images.map((image, index) => (
                     <img
@@ -144,6 +148,29 @@ const Gallery = () => {
                       }`}
                       onClick={() => handleImageClick(image)}
                     />
+                  ))}
+                </div>
+
+                {/* Back Button */}
+                <img
+                  src={backIcon}
+                  className="back-icon"
+                  alt="Back"
+                  onClick={() => setSelectedImage(null)}
+                />
+              </div>
+            ) : (
+              <div className="albums-grid-container">
+                <div className="albums-grid">
+                  {albums.map((album) => (
+                    <div
+                      key={album.id}
+                      className="album-item"
+                      onClick={() => handleAlbumClick(album)}
+                    >
+                      <h2>{album.name}</h2>
+                      <img src={album.images[0]} alt={album.name} />
+                    </div>
                   ))}
                 </div>
               </div>
