@@ -11,10 +11,10 @@ import linkedinIcon from "./linkdin1.svg"; // Update the path to your SVG file
 
 import edwin from "./ProfileImages/Edwin.jpg";
 import blesson from "./ProfileImages/Blesson.jpeg";
-import asif from "./ProfileImages/Asif.jpeg";
+import asif from "./ProfileImages/Asif-main.jpeg";
 import navneeth from "./ProfileImages/Navneeth.jpeg";
-import bijin from "./ProfileImages/Bijin.jpeg";
-import bino from "./ProfileImages/Bino.jpeg";
+import bijin from "./ProfileImages/Bijin-main.jpeg";
+import bino from "./ProfileImages/Bino-main.jpeg";
 import roshan from "./ProfileImages/Roshan.jpeg"
 import rohan from "./ProfileImages/Rohan.jpeg"
 import nobin from "./ProfileImages/Nobin.jpeg"
@@ -23,6 +23,7 @@ import vyshnavi from "./ProfileImages/Vyshnavi.jpeg"
 import gopika from "./ProfileImages/Gopika.jpg"
 import sidharth from "./ProfileImages/Sidharth.jpg"
 import rahul from "./ProfileImages/Rahul.jpeg";
+import sample from "./ProfileImages/Sample.jpg"
 
 const Ourteam = () => {
   const teamMembers = [
@@ -38,16 +39,16 @@ const Ourteam = () => {
       },
     },
     {
-      name: "Rohan Binu Abraham",
-      role: "Lead Mechanical Engineer",
-      image: rohan,
+      name: "Revealing Soon",
+      role: "Director",
+      image:sample,
       socialLinks: {
-        email: "rohanabraham.237@gmail.com",
-        instagram:
-          "https://www.instagram.com/rohan_i.am?igsh=MWRvZTI4dW9tOWE4dQ==",
-        linkedin: "https://www.linkedin.com/in/rohanbinuabraham",
+        email: "",
+        instagram:"",
+        linkedin: "",
       },
     },
+
     {
       name: "Bijin Kurian",
       role: "Managing Director",
@@ -81,6 +82,31 @@ const Ourteam = () => {
           "https://www.instagram.com/binojpanicker?igsh=OXhhN2ZpOTRvNXho",
         linkedin:
           "https://www.linkedin.com/in/bino-j-panicker-820937257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+    },
+
+    //              {
+    //   name: "",
+    //   role: "Member",
+    //   image: ,
+    //   socialLinks: {
+    //     email: "",
+    //     instagram: "",
+    //     linkedin: "",
+    //   },
+    // },
+    // Add more team members as needed
+  ];
+  const Members = [
+    {
+      name: "Rohan Binu Abraham",
+      role: "Lead Mechanical Engineer",
+      image: rohan,
+      socialLinks: {
+        email: "rohanabraham.237@gmail.com",
+        instagram:
+          "https://www.instagram.com/rohan_i.am?igsh=MWRvZTI4dW9tOWE4dQ==",
+        linkedin: "https://www.linkedin.com/in/rohanbinuabraham",
       },
     },
     {
@@ -129,19 +155,6 @@ const Ourteam = () => {
           "https://www.linkedin.com/in/nobin-jo-jaime-jose-6a3967235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
     },
-    //              {
-    //   name: "",
-    //   role: "Member",
-    //   image: ,
-    //   socialLinks: {
-    //     email: "",
-    //     instagram: "",
-    //     linkedin: "",
-    //   },
-    // },
-    // Add more team members as needed
-  ];
-  const Members = [
     {
       name: "Gopika S",
       role: "Member",
@@ -335,7 +348,7 @@ const Ourteam = () => {
           </Slider>
         </div>
       </section>
-      <section className="border-b" style={{ borderColor: "#333" }}>
+      {/* <section className="border-b" style={{ borderColor: "#333" }}>
         <div className="container px-3 py-3 pb-0 mx-auto">
           <h1 className="text-2xl font-semibold text-center text-white capitalize lg:text-3xl ">
             MEMBERS{" "}
@@ -358,9 +371,9 @@ const Ourteam = () => {
                     {member.name}
                   </h1>
 
-                  {/* <p className="mt-2 text-gray-10 capitalize dark:text-gray-10 group-hover:text-gray-10 role">
+                  <p className="mt-2 text-gray-10 capitalize dark:text-gray-10 group-hover:text-gray-10 role">
                     {member.role}
-                  </p> */}
+                  </p> 
 
                   <div className="flex mt-3 -mx-2">
                     <a
@@ -403,7 +416,7 @@ const Ourteam = () => {
             ))}
           </Slider>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

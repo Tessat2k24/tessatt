@@ -21,7 +21,7 @@ import backIcon from "/src/assets/back.svg";
 const photo = [
   {
     id: 1,
-    images: [img8, img7, team, img3, img4, img6],
+    images: [img8, img7,  img3, img4, img6],
   },
 ];
 
