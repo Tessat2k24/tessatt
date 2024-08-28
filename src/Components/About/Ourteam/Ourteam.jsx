@@ -40,7 +40,7 @@ const Ourteam = () => {
     },
     {
       name: "Revealing Soon",
-      role: "Director",
+      role: "COO",
       image:sample,
       socialLinks: {
         email: "",

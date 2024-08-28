@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./News.css";
 
+
 function News() {
   useEffect(() => {
     const script = document.createElement("script");
@@ -22,11 +23,11 @@ function News() {
       <div className="news-section">
         <div
           className="tumblr-post"
-          data-href="https://embed.tumblr.com/embed/post/t:quL-fBKq2QR0yjIogq57hg/756810519223189504/v2"
-          data-did="90c29ec7d949bcaf6432a9453e3581969009ad75"
+          data-href="https://embed.tumblr.com/embed/post/t:quL-fBKq2QR0yjIogq57hg/759872250945110016/v2"
+          data-did="a381941251fdd044ee45f0e3e6127c7bdc0c8e7e"
         >
-          <a href="https://www.tumblr.com/tessat-space/756810519223189504/meeting-with-mr-sheeju-chandran">
-            https://www.tumblr.com/tessat-space/756810519223189504/meeting-with-mr-sheeju-chandran
+          <a href="https://www.tumblr.com/tessat-space/759872250945110016/collaboration-with-alphonsa-college-pala-kerala">
+            https://www.tumblr.com/tessat-space/759872250945110016/collaboration-with-alphonsa-college-pala-kerala
           </a>
         </div>
         <div className="news-content">
