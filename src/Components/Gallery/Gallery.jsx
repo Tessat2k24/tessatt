@@ -312,42 +312,6 @@ const photo = [
         },
       ],
     },
-    {
-      id: 8,
-      name: "Team",
-      subAlbums: [
-        {
-          id: 9,
-          name: "Team",
-          images: [team_img1, team_img2, team_img3],
-          parentAlbum: 8, // Ensure parentAlbum is set
-        },
-      ],
-    },
-    {
-      id: 10,
-      name: "Meetings",
-      subAlbums: [
-        {
-          id: 11,
-          name: "Meeting",
-          images: [Meetings_img1],
-          parentAlbum: 10, // Ensure parentAlbum is set
-        },
-      ],
-    },
-    {
-      id: 13,
-      name: "Works",
-      subAlbums: [
-        {
-          id: 14,
-          name: "Works",
-          images: [work_img1],
-          parentAlbum: 13, // Ensure parentAlbum is set
-        },
-      ],
-    },
   ];
 
 const Gallery = () => {
