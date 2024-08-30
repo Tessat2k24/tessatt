@@ -76,8 +76,9 @@ const Contact = () => {
             <div className="information">
               <img src={location} className="icon" alt="Location" />
               <p>
-                Cabin No.3 SCIE lab Ramaujan Block Saintgits College of
-                Engineering Kottukulam Hills, Pathamuttam P. O Kerala 686532
+                Cabin 3, Basement Floor of Ramanujan Block, Innovation Lab,
+                Saintgits College of Engineering Kottukulam Hills, Pathamuttom
+                P.O, Kottayam, Kerala-686 532
               </p>
             </div>
             <div className="information">

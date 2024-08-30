@@ -5,23 +5,23 @@ import logo from "./logo.svg";
 import recruitmentImage from "./recruitment-poster.jpeg"; // Replace with your image path
 
 function Popup() {
-  const [isOverlayOpen, setIsOverlayOpen] = useState(true);
+//   const [isOverlayOpen, setIsOverlayOpen] = useState(true);
 
   const toggleMenu = () => {
     console.log("Toggle menu function");
   };
 
-  const closeOverlay = () => {
-    setIsOverlayOpen(false);
-  };
+//   const closeOverlay = () => {
+//     setIsOverlayOpen(false);
+//   };
 
-  useEffect(() => {
-    if (isOverlayOpen) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
-  }, [isOverlayOpen]);
+//   useEffect(() => {
+//     if (isOverlayOpen) {
+//       document.body.classList.add("no-scroll");
+//     } else {
+//       document.body.classList.remove("no-scroll");
+//     }
+//   }, [isOverlayOpen]);
 
   return (
     <div className="popup" id="home">
@@ -95,7 +95,7 @@ function Popup() {
           </li>
         </ul>
       </div>
-      {isOverlayOpen && (
+      {/* {isOverlayOpen && (
         <div className="overlay">
           <button className="close-button" onClick={closeOverlay}>
             X
@@ -135,7 +135,7 @@ function Popup() {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
