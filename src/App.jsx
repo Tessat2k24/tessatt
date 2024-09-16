@@ -20,7 +20,7 @@ function App() {
       <div className="app">
         <About />
         <Ourteam />
-        <Program />
+        {/* <Program /> */}
         {/* <Register /> */}
         <Projects />
         <News />
