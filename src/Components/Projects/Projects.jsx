@@ -8,7 +8,7 @@ import orientation from "./orientation.jpg";
 const Projects = () => {
   return (
     <div className="project-page" id="projects">
-      <div className="project-header">
+      <div className="proect-header">
         <h1 className="vertical-heading">Projects</h1>
       </div>
       <div className="project-content">
