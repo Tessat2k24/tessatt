@@ -2,54 +2,59 @@
   text-align: center;
   padding: 50px 20px; /* Adjust padding as needed */
   border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
 
+.about-us-heading, .about-us-heading2, .about-us-description-container {
+  opacity: 0; /* Start with opacity 0 for fade-in effect */
 }
 
 .about-us-heading {
   font-size: 2.5rem;
-  color: #fff; /* Adjust color to fit your theme */
+  color: #fff;
   margin-bottom: 10px;
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .about-us-description {
   max-width: 800px; /* Adjust max-width as needed */
   margin: 0 auto; /* Center the description horizontally */
-  text-align: center; /* Align text left within the description */
+  text-align: center;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #fff; /* Adjust color to fit your theme */
-  padding: 20px; /* Add padding inside the description */
+  color: #fff;
+  padding: 20px;
   border-radius: 8px; /* Rounded corners for the description */
 }
-.about-us-heading2{
+
+.about-us-heading2 {
   font-size: 1.5rem;
-  color: #fff; /* Adjust color to fit your theme */
+  color: #fff;
   text-align: center;
-    font-weight: bold;
+  font-weight: bold;
 }
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .about-us-heading {
-        font-size: 2rem; /* Adjust heading font size for smaller screens */
-    }
+  .about-us-heading {
+    font-size: 2rem; /* Adjust heading font size for smaller screens */
+  }
 
-    .about-us-description-container {
-        padding: 15px; /* Adjust padding inside the container for smaller screens */
-    }
+  .about-us-description-container {
+    padding: 15px; /* Adjust padding inside the container for smaller screens */
+  }
 
-    .about-us-description {
-        font-size: 1rem; /* Adjust description font size for smaller screens */
-    }
+  .about-us-description {
+    font-size: 1rem; /* Adjust description font size for smaller screens */
+  }
 }
 
 @media (max-width: 480px) {
-    .about-us-heading {
-        font-size: 1.8rem; /* Further adjust heading font size for very small screens */
-    }
+  .about-us-heading {
+    font-size: 1.8rem; /* Further adjust heading font size for very small screens */
+  }
 
-    .about-us-description-container {
-        max-width: 100%; /* Allow description container to take full width on very small screens */
-    }
+  .about-us-description-container {
+    max-width: 100%; /* Allow description container to take full width on very small screens */
+  }
 }

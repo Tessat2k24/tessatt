@@ -1,16 +1,52 @@
-import React from "react";
-import "./Footer.css"; // Import the CSS file
+import React, { useState } from "react";
+import "./Footer.css";
 import { Link } from "react-scroll";
-// Import your SVG icons
-import Linkedin from "/src/assets/linkedin.svg"; // Corrected path
+import Linkedin from "/src/assets/linkedin.svg";
 import Twitter from "/src/assets/x.svg";
 import Instagram from "/src/assets/instagram.svg";
-import FooterLogo from "./Tessat.svg"; // Corrected path
-  const toggleMenu = () => {
-    // Implement your toggle menu logic here
-    console.log("Toggle menu function");
-  };
+import FooterLogo from "./Tessat.svg";
+
+const toggleMenu = () => {
+  console.log("Toggle menu function");
+};
+
 const Footer = () => {
+        const [email, setEmail] = useState("");
+        const [status, setStatus] = useState("");
+
+        // Handle form submission
+        const handleSubmit = (e) => {
+          e.preventDefault();
+          setEmail(""); // Clear the input field
+
+          // Prepare data to be sent
+          const formData = new FormData();
+          formData.append("email", email);
+          // Replace the following URL with the URL of your deployed Google Apps Script web app
+          const scriptURL =
+            "https://script.google.com/macros/s/AKfycbzm-3VPLfJwPbqMJLq2MpFkG6edr3iYyRrfCnJ3b4X3uTXOhn0PMwMexBB1RUEKlVDt/exec";
+
+          // Send the form data to Google Sheets
+          fetch(scriptURL, {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => {
+              setStatus("Subscription successful!");
+
+              // Hide success message after 5 seconds
+              setTimeout(() => {
+                setStatus(""); // Reset status after showing the success message
+              }, 5000);
+            })
+            .catch((error) => {
+              setStatus("Failed to subscribe, please try again.");
+              console.error("Error:", error);
+            });
+        };
+
+  
+
   return (
     <footer>
       <div className="footer-content">
@@ -99,32 +135,55 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
+          <div className="subscription">
+            <h2>Sign up for our newsletter</h2>
+            <p>
+              <span className="arrow">←</span> Stay in the loop with us. To know
+              more about our projects and upcoming sessions.
+            </p>
+            <div className="subscription-form">
+              <form onSubmit={handleSubmit} className="form220">
+                <input
+                  type="email"
+                  placeholder="sample@gmail.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+                <button type="submit" className="subscription-button">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+            {status && <p className="success-message">{status}</p>}{" "}
+            {/* Display the status message below the button */}
+          </div>
         </div>
         <div className="contact-info110">
           <div>
             <ul>
               <li>ceo@tessat.space</li>
-              <li>+91 9037331907</li>
+              <li>+91 8078157810</li>
             </ul>
           </div>
           <div className="social-links">
             <a
               href="https://www.instagram.com/tessat.space?igsh=OGt4cTVrMWFicnd1"
-              target="blank"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <img src={Instagram} alt="Instagram" />
             </a>
             <a
               href="https://www.linkedin.com/company/tessat/"
-              target="blank"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <img src={Linkedin} alt="Linkedin" />
             </a>
             <a
               href="https://x.com/Tessat_Space?t=9ig4oenY8aDOwikBH1aiAw&s=09"
-              target="blank"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <img src={Twitter} alt="Twitter" />

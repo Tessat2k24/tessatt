@@ -152,12 +152,12 @@ textarea.input {
   opacity: 1;
 }
 
-.contact-info {
+.contact-info220 {
   padding: 2.3rem 2.2rem;
   position: relative;
 }
 
-.contact-info .title {
+.contact-info220 .title {
   color: #000;
   overflow: hidden;
 }
@@ -231,7 +231,7 @@ textarea.input {
     grid-template-columns: 1fr;
   }
 
-  .contact-info:before {
+  .contact-info220:before {
     bottom: initial;
     top: -75px;
     right: 65px;
@@ -252,23 +252,23 @@ textarea.input {
     padding: 1.5rem;
   }
 
-  .contact-info:before {
+  .contact-info220:before {
     display: none;
   }
 
   form,
-  .contact-info {
+  .contact-info220 {
     padding: 1.7rem 1.6rem;
   }
 
   .text,
   .information,
   .social-media p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .title {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
   }
 
   .social-icons a {

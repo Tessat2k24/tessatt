@@ -66,7 +66,7 @@ const Contact = () => {
   return (
     <div className="container220" id="contact">
       <div className="form">
-        <div className="contact-info">
+        <div className="contact-info220">
           <h3 className="title">Let's get in touch</h3>
           <p className="text">
             No project is too big or small. Ask us anything!
@@ -87,7 +87,7 @@ const Contact = () => {
             </div>
             <div className="information">
               <img src={phone} className="icon" alt="Phone" />
-              <p>+91 9037331907</p>
+              <p>+91 8078157810</p>
             </div>
           </div>
 

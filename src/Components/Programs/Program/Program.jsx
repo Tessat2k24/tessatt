@@ -1,15 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Program.css";
-import Register from "../Register/Register.jsx"; // Import the Register component
+import RegisterSarasVigyan from "../Register/RegisterSarasVigyan.jsx";
+import RegisterUdaan from "../Register/RegisterUdaan.jsx";
+import RegisterPragati from "../Register/RegisterPragati.jsx";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Program = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [selectedProgram, setSelectedProgram] = useState("");
   const [scrollPosition, setScrollPosition] = useState(0);
+  const programsSectionRef = useRef(null);
 
   const handleRegisterClick = (programName) => {
     setSelectedProgram(programName);
-    // Save the current scroll position
     setScrollPosition(window.pageYOffset);
     setShowPopup(true);
   };
@@ -18,22 +24,18 @@ const Program = () => {
     setShowPopup(false);
   };
 
-  // Add/remove class to body when popup is open/closed and manage scroll position
   useEffect(() => {
     if (showPopup) {
-      // Disable scrolling by setting the body to fixed and preserving the scroll position
       document.body.style.position = "fixed";
       document.body.style.top = `-${scrollPosition}px`;
       document.body.style.width = "100%";
     } else {
-      // Restore scrolling and scroll to the saved position
       document.body.style.position = "";
       document.body.style.top = "";
       document.body.style.width = "";
-      window.scrollTo(0, scrollPosition); // Restore the scroll position
+      window.scrollTo(0, scrollPosition);
     }
-
-    // Cleanup on unmount
+    
     return () => {
       document.body.style.position = "";
       document.body.style.top = "";
@@ -41,16 +43,33 @@ const Program = () => {
     };
   }, [showPopup, scrollPosition]);
 
+  useEffect(() => {
+    const sections = gsap.utils.toArray(".card");
+
+    gsap.fromTo(
+      sections,
+      { rotationY: 180 }, // Start rotated
+      {
+        rotationY: 0, // Rotate to normal position
+        duration: 0.2,
+        stagger: 0.2, // Staggering effect
+        scrollTrigger: {
+          trigger: programsSectionRef.current,
+          start: "top 80%",
+          toggleActions: "restart none none none",
+          once: false,
+        },
+      }
+    );
+  }, []);
+
   return (
-    <section className="programs-section">
+    <section className="programs-section" ref={programsSectionRef}>
       <h1 className="program-heading">Programs</h1>
       <div className="program-cards">
-        {/* Workshop Card */}
+        {/* Saras Vigyan Card */}
         <div className="card">
-          <div
-            className="card-image"
-                      style={{ backgroundImage: "url(/src/assets/Programs/sarasvigyan.jpg)"}}
-          ></div>
+          <div className="card-image sarasvigyan"></div>
           <div className="card-hover">
             <h1>Saras Vigyan</h1>
             <ul className="guidelines">
@@ -62,21 +81,18 @@ const Program = () => {
             </ul>
             <button
               className="register-btn"
-              onClick={() => handleRegisterClick("Workshop")}
+              onClick={() => handleRegisterClick("Saras Vigyan")}
             >
               Register
             </button>
           </div>
         </div>
 
-        {/* Internship Card */}
+        {/* Udaan Card */}
         <div className="card">
-          <div
-            className="card-image"
-            style={{ backgroundImage: "url('/src/assets/Artboard 3.jpg')" }}
-          ></div>
+          <div className="card-image udaan"></div>
           <div className="card-hover">
-            <h1>Internship</h1>
+            <h1>Udaan</h1>
             <ul className="guidelines">
               <li>Work on live projects</li>
               <li>Mentorship from industry experts</li>
@@ -86,46 +102,53 @@ const Program = () => {
             </ul>
             <button
               className="register-btn"
-            //   onClick={() => handleRegisterClick("Internship")}
+              onClick={() => handleRegisterClick("Udaan")}
             >
-              Register
+              Apply Now
             </button>
           </div>
         </div>
 
-        {/* Orientation Class Card */}
+        {/* Pragati Card */}
         <div className="card">
-          <div
-            className="card-image"
-            style={{ backgroundImage: "url('.jpg')" }}
-          ></div>
+          <div className="card-image Pragati"></div>
           <div className="card-hover">
-            <h1>Orientation Class</h1>
+            <h1>Pragati</h1>
             <ul className="guidelines">
+              <li>Talk Session for students</li>
+              <li>space related topics</li>
+              <li>Course structure overview</li>
               <li>Introduction to the program</li>
               <li>Q&A with instructors</li>
-              <li>Course structure overview</li>
-              <li>Pre-course preparation tips</li>
-              <li>Networking opportunities</li>
             </ul>
             <button
               className="register-btn"
-            //   onClick={() => handleRegisterClick("Orientation Class")}
+              onClick={() => handleRegisterClick("Pragati")}
             >
-              Register
+              Book Now
             </button>
           </div>
         </div>
       </div>
 
-      {/* Register Component as Popup */}
+      {/* Register Popup */}
       {showPopup && (
         <div className="overlay770">
           <div className="popup770">
             <button className="close-btn" onClick={closePopup}>
               &times;
-            </button>{" "}
-              <Register program={selectedProgram} closePopup={closePopup} />
+            </button>
+
+            {/* Render the correct Register component based on selectedProgram */}
+            {selectedProgram === "Saras Vigyan" && (
+              <RegisterSarasVigyan closePopup={closePopup} />
+            )}
+            {selectedProgram === "Udaan" && (
+              <RegisterUdaan closePopup={closePopup} />
+            )}
+            {selectedProgram === "Pragati" && (
+              <RegisterPragati closePopup={closePopup} />
+            )}
           </div>
         </div>
       )}

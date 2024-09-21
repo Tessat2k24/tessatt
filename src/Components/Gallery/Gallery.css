@@ -9,6 +9,22 @@
   justify-content: center;
   justify-items: center;
 }
+.gallery-heading {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #fff;
+  writing-mode: horizontal-tb;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+  opacity: 0.2;
+  position: relative;
+    font-family: "Bebas Neue";
+    font-style:italic;
+  white-space: pre; /* Preserves spaces */
+    text-align: -webkit-center;
+
+}
 
 .album-item img {
   width: 100px;
@@ -53,7 +69,7 @@
   align-items: center; /* Center vertically */
   border-bottom: 1px solid #333;
         padding-bottom: 20px;
-    background-color: rgba(0,0,0,0.8);
+    background-color:black;
       border-top:1px solid #fff;
   border-bottom: 1px solid #fff;
   padding-top: 15px;
@@ -204,8 +220,8 @@
 }
 
 .gallery-btn {
-  background-color: #ff6f61; /* Button background color */
-  color: #fff; /* Button text color */
+  background-color: #DCD7C9; /* Button background color */
+  color: #000; /* Button text color */
   border: none;
   padding: 10px 20px; /* Button padding */
   font-size: 1rem; /* Font size */
@@ -217,10 +233,11 @@
   align-content: center;
   display: flex;
   align-items:center;
+  font-weight: 900;
 }
 
 .gallery-btn:hover {
-  background-color: #ff8b81; /* Button background color on hover */
+  background-color: #A27B5C; /* Button background color on hover */
 }
 
 .gallery-btn a {
@@ -231,6 +248,10 @@
 @media (max-width: 768px) {
   .prev,.next{
     width: 25px;
+  }
+    .gallery-heading {
+    font-size: 2.5rem;
+    opacity: 0.5;
   }
 }
 
@@ -253,6 +274,10 @@
     object-fit: cover;
     border-radius: 10px;
 }
+  .gallery-heading {
+    font-size: 3rem;
+    opacity: 0.4;
+  }
 }
 
 /* Ensure a minimum of 4 columns on larger screens */
@@ -269,3 +294,15 @@
 }
 }
 
+
+/* Responsive Styling */
+@media (max-width: 1200px) {
+  .program-heading {
+    font-size: 4rem;
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 600px) {
+
+}

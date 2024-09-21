@@ -1,4 +1,42 @@
 /* Ourteam.css */
+.ourteam-heading {
+    font-size: 4rem;
+  font-weight: 800;
+  color: #fff;
+  writing-mode: horizontal-tb;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  opacity: 0.6;
+  position: relative;
+    font-family: "Bebas Neue";
+    font-style: italic;
+    text-align: center;
+    line-height: 1;
+    overflow: hidden;
+}
+
+
+@media (max-width: 1200px) {
+  .program-heading {
+    font-size: 4rem;
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 900px) {
+  .program-heading {
+    font-size: 3rem;
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 600px) {
+  .program-heading {
+    font-size: 2.5rem;
+    opacity: 0.5;
+  }
+}
 
 /* Override slick slider arrows */
 .slick-prev,

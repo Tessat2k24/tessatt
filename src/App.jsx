@@ -10,8 +10,6 @@ import Navbar from "./Components/Navbar/Navbar.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import Popup from "./Components/popup/Popup.jsx";
 import Program from "./Components/Programs/Program/Program.jsx";
-import Subscription from "./Components/Subscription/Subscription.jsx";
-// import Register from './Components/Programs/Register/Register';
 function App() {
   return (
     <>
@@ -19,13 +17,11 @@ function App() {
       <Navbar />
       <div className="app">
         <About />
-        <Ourteam />
-        {/* <Program /> */}
-        {/* <Register /> */}
+        <Program />
         <Projects />
         <News />
         <Gallery />
-        <Subscription />
+        <Ourteam />
         <Contact />
         <Footer />
       </div>

@@ -1,14 +1,13 @@
 /* News.css */
 .news-section {
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 20px;
+background-color: black;  padding: 20px;
   margin: 20px; /* Center the section horizontally */
   max-width: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .newscontainer{
   display: flex;
@@ -19,13 +18,9 @@
   overflow: hidden;
     border-top:1px solid #fff;
   border-bottom: 1px solid #fff;
-  padding-top: 15px;
-}
-.news-head {
-  color: black;
-  text-align: center;
-  margin-bottom: 10px;
-  flex: 1; /* Take up remaining space */
+    position: relative;
+    background-color: black;
+
 }
 
 .news-content {
@@ -36,12 +31,12 @@
 
 .news-description {
   font-size: 1.1rem;
-  color: #000;
+  color: #fff;
   margin-bottom: 20px;
 }
 
 .news-btn {
-  background-color: #ff6f61;
+  background-color: #DCD7C9;
   color: black;
   border: none;
   padding: 10px 20px;
@@ -52,16 +47,19 @@
   transition: background-color 0.3s;
   display: block; /* Ensure button is a block element for centering */
   margin: 0 auto; /* Center align button */
+    font-weight: 900;
+
 }
 
 .news-btn:hover {
-  background-color: #ff8b81;
+  background-color: #A27B5C;
 }
 
 @media (max-width: 768px) {
   .news-section {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .tumblr-post {
@@ -74,5 +72,68 @@
 
   .news-btn {
     margin-top: 20px; /* Add space between content and button */
+  }
+}
+
+.news-header {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column; /* Set to column for vertical centering */
+  justify-content: center; /* Vertically center content */
+  align-items: center; /* Horizontally center content */
+  height: -webkit-fill-available; /* Make sure the height of the container is full view height */
+}
+
+.vertical-heading2 {
+  font-size: 6rem;
+  color: #000;
+  writing-mode: vertical-rl;
+  transform: rotate(0deg);
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: inline-block;
+  opacity: 0.3;
+  font-family: "Bebas Neue";
+  font-weight: 900;
+  font-style: italic;
+    white-space: pre; /* Preserves spaces */
+
+}
+
+/* Responsive Adjustments */
+@media (min-width: 660px) {
+  .vertical-heading2 {
+    font-size: 4.5rem; /* Adjust heading size for smaller screens */
+    font-weight: 900;
+        color: #fff
+  }
+}
+
+/* Responsive Adjustments */
+@media (min-width: 580px) and (max-width: 660px){
+  .vertical-heading2 {
+    font-size: 4.5rem; /* Adjust heading size for smaller screens */
+    font-weight: 900;
+        color: #f70100;
+  }
+}
+
+
+@media (max-width: 580px){
+  .news-header{
+        padding: 20px;
+  }
+  .vertical-heading2 {
+    font-size: 4.5rem; /* Adjust heading size for smaller screens */
+    color: #000;
   }
 }

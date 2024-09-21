@@ -279,11 +279,9 @@ const Ourteam = () => {
   };
   return (
     <>
-      <section className="border-b" style={{ borderColor: "#333" }}>
-        <div className="container px-3 py-3 pb-0 mx-auto">
-          <h1 className="text-2xl font-semibold text-center text-white capitalize lg:text-3xl ">
-            EXECUTIVE PANEL{" "}
-          </h1>
+      <section className="border-b bg-black" style={{ borderColor: "#333" }}>
+        <div className="container  px-3 py-3 pb-0 mx-auto">
+          <h1 className="ourteam-heading ">EXECUTIVE PANEL</h1>
 
           <Slider {...settings}>
             {teamMembers.map((member, index) => (
@@ -302,9 +300,7 @@ const Ourteam = () => {
                     {member.name}
                   </h1>
 
-                  <p className="mt-2 text-white capitalize ">
-                    {member.role}
-                  </p>
+                  <p className="mt-2 text-white capitalize ">{member.role}</p>
 
                   <div className="flex mt-3 -mx-2">
                     <a

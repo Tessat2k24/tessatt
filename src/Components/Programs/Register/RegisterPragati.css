@@ -1,0 +1,182 @@
+.Register-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:1rem;
+}
+
+.contact-info {
+  padding: 2.3rem 2.2rem;
+  position: relative;
+
+}
+
+.contact-info .title {
+  color: #000;
+  overflow: hidden;
+}
+
+.text {
+  color: #000;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  color: #000;
+  margin: 0.7rem 0;
+  font-size: 0.95rem;
+}
+
+.information img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.7rem;
+  flex-shrink: 0;
+}
+
+.information p {
+  color: #000;
+  margin: 0;
+  flex: 1;
+    text-align: left;
+}
+
+
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 10px;
+  gap: 50px; /* Space between form and event details */
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* Event Details Section */
+.event-details {
+  flex: 1;
+    text-align: center;
+display:flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.event-details h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.event-details p {
+  margin-bottom: 5px;
+  color: #555;
+  line-height: 1.6;
+font-size: 1 rem;
+font-weight: 700    
+}
+
+.details p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.additional-info p {
+  list-style: none;
+  padding: 0;
+    margin-bottom: 10px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Form Section */
+.form-container {
+  flex: 1;
+}
+
+.form110 {
+  display: flex;
+  flex-direction: column;
+}
+
+.form110 .input-box {
+  margin-bottom: 20px;
+    text-align: left;
+
+}
+
+.form110 label {
+  font-size: 1rem;
+  color: #333;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-column {
+  display: flex;
+  gap: 10px; /* Space between phone numbers */
+}
+
+.form-column .input-box {
+  flex: 1;
+}
+
+.workshop-submitpragati {
+  padding: 15px;
+  background-color: #1D267D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.workshop-submitpragati:hover {
+  background-color: #50589e;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 900px) {
+  .main-container {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .form-column {
+    flex-direction: column;
+    gap: 1; /* Remove gap on smaller screens */
+  }
+
+  .event-details, .form-container {
+    width: 100%;
+  }
+
+  .workshop-submit {
+    width: 100%;
+  }
+}
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+}
