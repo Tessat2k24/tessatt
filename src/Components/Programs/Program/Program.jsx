@@ -113,7 +113,7 @@ const Program = () => {
         <div className="card">
           <div className="card-image Pragati"></div>
           <div className="card-hover">
-            <h1>Pragati</h1>
+            <h1>Pragathi</h1>
             <ul className="guidelines">
               <li>Talk Session for students</li>
               <li>space related topics</li>
