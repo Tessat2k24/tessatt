@@ -2,30 +2,84 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import "./Popup.css";
 import logo from "./logo.svg";
-import recruitmentImage from "./recruitment-poster.jpeg"; // Replace with your image path
+import arduino from "./arduino.svg";
+import jobSearch from "./job-search.svg";
 
 function Popup() {
-//   const [isOverlayOpen, setIsOverlayOpen] = useState(true);
+  const [imageHeight, setImageHeight] = useState("40vh"); // Initial image height
+  const [isNotificationVisible, setIsNotificationVisible] = useState(false); // To toggle notification popup
+  const [isResized, setIsResized] = useState(false); // To track if the logo has resized
 
-  const toggleMenu = () => {
-    console.log("Toggle menu function");
-  };
+  // Shrink image height and show notifications after 2 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setImageHeight("20vh"); // Shrink image after 1 second
+      setIsResized(true); // Set resized flag
+    }, 1000);
 
-//   const closeOverlay = () => {
-//     setIsOverlayOpen(false);
-//   };
+    const notificationTimer = setTimeout(() => {
+      setIsNotificationVisible(true); // Show notification popup after image shrinks
+    }, 2000);
 
-//   useEffect(() => {
-//     if (isOverlayOpen) {
-//       document.body.classList.add("no-scroll");
-//     } else {
-//       document.body.classList.remove("no-scroll");
-//     }
-//   }, [isOverlayOpen]);
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(notificationTimer);
+    };
+  }, []);
 
   return (
     <div className="popup" id="home">
-      <img className="image" src={logo} alt="Logo" />
+      {/* Logo Image */}
+      <img
+        className="image"
+        src={logo}
+        alt="Logo"
+        style={{
+          maxHeight: imageHeight,
+          transition: "max-height 1s ease-in-out",
+        }}
+      />
+
+      {/* Conditionally Reserve Space for Notification Panel only after resizing */}
+      <div
+        className="notification-reserved-space"
+        style={{
+          minHeight: isResized ? "200px" : "0px", // Reserve space only after resizing
+          transition: "min-height 1s ease-in-out", // Smoothly adjust the space
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {/* Notification Popup (appears instantly after logo is shrunk) */}
+        {isNotificationVisible && (
+          <div className="notification-panel">
+            <div className="notification">
+              <div className="icon">
+                <img src={arduino} alt="Arduino Icon" />
+              </div>
+              <div className="content">
+                <div className="category">Workshop</div>
+                <div className="message">2 Day Workshop</div>
+                <div className="time">11 12 October 2024</div>
+              </div>
+            </div>
+
+            <div className="notification">
+              <div className="icon">
+                <img src={jobSearch} alt="Job Search Icon" />
+              </div>
+              <div className="content">
+                <div className="category">Reminder</div>
+                <div className="message">Join our Internship Program</div>
+                <div className="time">Apply Now</div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Navbar */}
       <div className="navbar110">
         <ul>
           <li>
@@ -36,7 +90,6 @@ function Popup() {
               smooth={true}
               offset={1}
               duration={500}
-              onClick={toggleMenu}
             >
               About
             </Link>
@@ -49,7 +102,6 @@ function Popup() {
               smooth={true}
               offset={-40}
               duration={500}
-              onClick={toggleMenu}
             >
               Projects
             </Link>
@@ -62,7 +114,6 @@ function Popup() {
               smooth={true}
               offset={-40}
               duration={500}
-              onClick={toggleMenu}
             >
               News
             </Link>
@@ -75,7 +126,6 @@ function Popup() {
               smooth={true}
               offset={-40}
               duration={500}
-              onClick={toggleMenu}
             >
               Gallery
             </Link>
@@ -88,54 +138,12 @@ function Popup() {
               smooth={true}
               offset={-40}
               duration={500}
-              onClick={toggleMenu}
             >
               Contact
             </Link>
           </li>
         </ul>
       </div>
-      {/* {isOverlayOpen && (
-        <div className="overlay">
-          <button className="close-button" onClick={closeOverlay}>
-            X
-          </button>
-          <div className="overlay-content">
-            <img
-              className="recruitment-image"
-              src={recruitmentImage}
-              alt="Recruitment"
-            />
-            <div className="text-content">
-              <h1>Recruitment is Now Open</h1>
-              <ul>
-                <li>
-                  # This Recruitment is only OPEN for the students of Saintgits
-                  Group of Colleges
-                </li>
-                <li>
-                  # There will be an interview process before the final selection.
-                </li>
-                <li>
-                 # We're seeking dedicated individuals who are passionate about
-                  hands-on work and are committed to making a meaningful
-                  contribution.
-                </li>
-                <li>
-                  # There will be some project-related expenses that members will
-                  be expected to contribute towards.
-                </li>
-              </ul>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfB2IQ_foy8Vg9aymwXCQjpHAY2rBbLRMrN0vx9FqjeTEVfpg/viewform"
-                target="blank"
-              >
-                <button className="apply-button">Apply Now</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      )} */}
     </div>
   );
 }

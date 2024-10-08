@@ -314,10 +314,10 @@ const albums = [
           BSSmodel,
           satmodel_img1,
           satmodel_img2,
-          satmodel_img3,
+          // satmodel_img3,
           satmodel_img4,
           satmodel_img6,
-          satmodel_img7,
+          // satmodel_img7,
           satmodel_img8,
           satmodel_img9,
           satmodel_img10,
@@ -334,7 +334,6 @@ const albums = [
     ],
   },
 ];
-
 const Gallery = () => {
   const [isAlbumPopupOpen, setIsAlbumPopupOpen] = useState(false);
   const [selectedAlbum, setSelectedAlbum] = useState(null);
@@ -359,6 +358,24 @@ const Gallery = () => {
       window.scrollTo(0, scrollPosition);
     }
   }, [isAlbumPopupOpen]);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (selectedImage) {
+        if (e.key === "ArrowRight") {
+          handleNextPrev(1); // Move to the next image
+        } else if (e.key === "ArrowLeft") {
+          handleNextPrev(-1); // Move to the previous image
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selectedImage]);
 
   const handleAlbumClick = (album) => {
     setSelectedAlbum(album);
@@ -440,9 +457,9 @@ const Gallery = () => {
 
       {isAlbumPopupOpen && (
         <div className="album-popup">
-          <span className="album-popup-close" onClick={handleClosePopup}>
+          <button className="close-btn" onClick={handleClosePopup}>
             &times;
-          </span>
+          </button>
           <div className="album-popup-content">
             {selectedImage ? (
               <div className="album-modal">
@@ -535,3 +552,4 @@ const Gallery = () => {
 };
 
 export default Gallery;
+

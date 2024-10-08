@@ -10,6 +10,7 @@ import Navbar from "./Components/Navbar/Navbar.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import Popup from "./Components/popup/Popup.jsx";
 import Program from "./Components/Programs/Program/Program.jsx";
+import WhatsAppButton from "./Components/WhatsAppButton";
 function App() {
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
         <Ourteam />
         <Contact />
         <Footer />
+        <WhatsAppButton/>
       </div>
     </>
   );

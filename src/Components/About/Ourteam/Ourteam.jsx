@@ -23,7 +23,7 @@ import vyshnavi from "./ProfileImages/Vyshnavi.jpeg"
 import gopika from "./ProfileImages/Gopika.jpg"
 import sidharth from "./ProfileImages/Sidharth.jpg"
 import rahul from "./ProfileImages/Rahul.jpeg";
-import sample from "./ProfileImages/Sample.jpg"
+import joseph from "./ProfileImages/joseph2.png"
 
 const Ourteam = () => {
   const teamMembers = [
@@ -39,13 +39,15 @@ const Ourteam = () => {
       },
     },
     {
-      name: "Revealing Soon",
+      name: "Joseph Binil",
       role: "COO",
-      image:sample,
+      image: joseph,
       socialLinks: {
-        email: "",
-        instagram:"",
-        linkedin: "",
+        email: "josephmbinil@gmail.com",
+        instagram:
+          "https://www.instagram.com/joseph_binil_?igsh=MTNtNTJqZ2s1d3k2Nw==",
+        linkedin:
+          "https://www.linkedin.com/in/joseph-binil?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
     },
 

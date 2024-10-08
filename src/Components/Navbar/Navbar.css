@@ -10,7 +10,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 999;
+  z-index: 9999;
   transition: top 0.5s;
   border-bottom: 1px #212121 solid;
   opacity: 0;

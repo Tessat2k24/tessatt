@@ -34,6 +34,7 @@ function News() {
     // Initialize animations
     animateElements();
 
+
     // Load Tumblr post script
     const script = document.createElement("script");
     script.src =
@@ -56,11 +57,11 @@ function News() {
       <div className="news-section">
         <div
           className="tumblr-post"
-          data-href="https://embed.tumblr.com/embed/post/t:quL-fBKq2QR0yjIogq57hg/762243503801729024/v2"
-          data-did="9584cdf23888dfe3c7958536311b71df74a2e03e"
+          data-href="https://embed.tumblr.com/embed/post/t:quL-fBKq2QR0yjIogq57hg/763491053363920896/v2"
+          data-did="c12d130e5134939d875d20bb4d4c70e1f8a78748"
         >
-          <a href="https://www.tumblr.com/tessat-space/762243503801729024/exciting-milestone-student-satellite-project">
-            https://www.tumblr.com/tessat-space/762243503801729024/exciting-milestone-student-satellite-project
+          <a href="hhttps://www.tumblr.com/tessat-space/763491053363920896/tessat-one-of-the-top-5-startups-from-south">
+https://www.tumblr.com/tessat-space/763491053363920896/tessat-one-of-the-top-5-startups-from-south
           </a>
         </div>
         <div className="news-content">
@@ -68,8 +69,8 @@ function News() {
             Our Latest News
           </h1>
           <p className="news-description">
-            Want to know what’s new? We’ve got exciting updates! Click See More
-            to dive into the latest news and happenings.
+            Want to know what’s new? We’ve got exciting updates! Click
+            See More to dive into the latest news and happenings.
           </p>
           <a
             href="https://www.tumblr.com/blog/tessat-space"

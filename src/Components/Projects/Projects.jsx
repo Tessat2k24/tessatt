@@ -4,8 +4,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Projects.css"; // Your CSS file for styling
 
 import cansat from "./cansat.jpg";
-import research from "./research.jpg";
-import orientation from "./orientation.jpg";
+import outpot from "./outpot.jpg";
+import humanoid from "./humanoid.jpg";
 
 // Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -55,13 +55,12 @@ const Projects = () => {
             <img src={cansat} alt="CANSAT Project" className="project-image" />
           </div>
           <div className="project-info">
-            <h2 className="project-title">CANSAT Projects</h2>
+            <h2 className="project-title">Small Scale Space Tech Initiative</h2>
             <p className="project-description">
-              CANSAT projects are miniature satellites built by students to
-              conduct experiments during a simulated space mission. These
-              projects provide a unique platform for students to bridge the gap
-              between theoretical knowledge and practical application, fostering
-              innovation and problem-solving skills.
+              Space debris poses a significant threat to humanity. We are
+              embarking on a new venture in small satellite technology, focusing
+              on deploying small satellites in Low Earth Orbit (LEO) and
+              repurposing space debris as satellite payloads.
             </p>
           </div>
         </div>
@@ -72,20 +71,15 @@ const Projects = () => {
           ref={(el) => (projectCardsRef.current[1] = el)} // Reference to GSAP animation
         >
           <div className="project-image-container">
-            <img
-              src={orientation}
-              alt="Student Orientation"
-              className="project-image"
-            />
+            <img src={humanoid} alt="humanoid" className="project-image" />
           </div>
           <div className="project-info">
-            <h2 className="project-title">Student Orientation</h2>
+            <h2 className="project-title">Companion Robot Development</h2>
             <p className="project-description">
-              TESSAT ignites a passion for science, technology, engineering, and
-              math (STEM) in students through engaging workshops and
-              project-based learning experiences. These programs equip students
-              with the technical skills and innovative mindset to thrive in the
-              competitive world.
+              We are in the process of designing a highly functional and mobile
+              companion robot, surpassing the capabilities of ISRO's Vyomithra.
+              Currently, we are at Technology Readiness Level 1 (TRL 1) in this
+              project.
             </p>
           </div>
         </div>
@@ -97,19 +91,21 @@ const Projects = () => {
         >
           <div className="project-image-container">
             <img
-              src={research}
-              alt="Research and Development"
+              src={outpot}
+              alt="Outposts Integrated Rover Development"
               className="project-image"
             />
           </div>
           <div className="project-info">
-            <h2 className="project-title">Research and Development</h2>
+            <h2 className="project-title">
+              Outposts Integrated Rover Development
+            </h2>
             <p className="project-description">
-              At TESSAT, our R&D team pushes the boundaries of aerospace
-              engineering by exploring innovative technologies and their
-              applications. Our research focuses on hardware and software
-              design, with a commitment to developing novel solutions for the
-              aerospace industry.
+              We are developing an advanced rover capable of mining outposts at
+              fixed intervals across an equal area of land on any exoplanet or
+              moon. This innovation allows for parallel data collection over
+              larger areas at consistent intervals, providing precise and
+              unexplored data.
             </p>
           </div>
         </div>
