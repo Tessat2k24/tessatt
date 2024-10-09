@@ -35,7 +35,7 @@ const Program = () => {
       document.body.style.width = "";
       window.scrollTo(0, scrollPosition);
     }
-    
+
     return () => {
       document.body.style.position = "";
       document.body.style.top = "";
@@ -113,7 +113,7 @@ const Program = () => {
         <div className="card">
           <div className="card-image Pragati"></div>
           <div className="card-hover">
-            <h1>Pragathi</h1>
+            <h1>Pragati</h1>
             <ul className="guidelines">
               <li>Talk Session for students</li>
               <li>space related topics</li>

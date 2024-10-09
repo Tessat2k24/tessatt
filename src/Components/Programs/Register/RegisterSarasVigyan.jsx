@@ -6,6 +6,8 @@ import location from "/src/assets/location.svg";
 import calendar from "/src/assets/calendar.svg";
 import seat from "/src/assets/seat.svg";
 import fees from "/src/assets/fees.svg";
+import online from "/src/assets/online.svg";
+import skills from "/src/assets/skills.svg";
 
 const RegisterSarasVigyan = () => {
   const [name, setName] = useState("");
@@ -66,12 +68,11 @@ const RegisterSarasVigyan = () => {
           <h1>Event Details</h1>
           <div className="additional-info">
             <p>
-              Through Saras Vigyan we aim at engaging in hands-on projects
-              related to Aerospace and Astronautics, encouraging space
-              enthusiasts to contribute. We provide in-depth knowledge and
-              history about space through our presentations. We also give
-              hands-on training on Arduino and Tinkercad. We will also be
-              teaching on how to create and deliver a full-fledged presentation.
+              SARASVIGYAN: 2 day online workshop series. Through this workshop
+              we aim to provide adequate knowledge in PCB Designing, Circuit
+              Schematics, Computer Aided Designing and basics to 3D Printing.
+              This online workshop is beginner friendly and requires no pre -
+              requisite knowledge. So sign up and meet you there.
             </p>
           </div>
           <div className="info">
@@ -84,20 +85,38 @@ const RegisterSarasVigyan = () => {
               </p>
             </div> */}
             <div className="information">
-              <img src={calendar} className="icon" alt="Date" />
+              <img src={skills} className="icon" alt="skills" />
               <p>
-                Subscribe to our newsletter to learn more about our upcoming
-                workshops as soon as they're announced!
+                workshop on Circuit design,PCB designing, CAD(Basics), 3D
+                Printing(Basics){" "}
               </p>
             </div>
             <div className="information">
-              <img src={seat} className="icon" alt="seat" />
-              <p>100 Seats Only</p>
+              <img src={online} className="icon" alt="mode" />
+              <p>Mode: Online</p>
+            </div>
+            <div className="information">
+              <img src={calendar} className="icon" alt="Date" />
+              <p>
+                October 13, 2024 6pm to 8pm
+                <br />
+                October 14, 2024 7:30pm to 9:30pm
+              </p>
             </div>
             {/* <div className="information">
-              <img src={fees} className="icon" alt="fees" />
-              <p>Subscibe Our newsletter for knowing when we announce</p>
+              <img src={seat} className="icon" alt="seat" />
+              <p>100 Seats Only</p>
             </div> */}
+
+            <div className="information">
+              <img src={fees} className="icon" alt="fees" />
+              <p>
+                Early bird Offer:&#x20b9; 119 (Only for First 10 Registrations)
+                <br />
+                Regular Fees:&#x20b9; 159
+              </p>
+            </div>
+
             <p>For More Information Contact Us</p>
             <div className="information">
               <img src={email110} className="icon" alt="Email" />
@@ -108,9 +127,13 @@ const RegisterSarasVigyan = () => {
               <p>+91 8078157810</p>
             </div>
           </div>
+          <a href="https://forms.gle/yfDAkb17SxNamPsz6" target="_blank">
+            {" "}
+            <button className="workshop-submit">Register Now </button>
+          </a>
         </div>
 
-        <div className="form-container">
+        {/* <div className="form-container">
           <form className="form110" onSubmit={handleSubmit}>
             <div className="input-box">
               <label>Full Name</label>
@@ -150,7 +173,7 @@ const RegisterSarasVigyan = () => {
                   value={phone2}
                   onChange={(e) => setPhone2(e.target.value)}
                   placeholder="Enter phone number"
-                  required
+                  // required
                 />
               </div>
             </div>
@@ -175,10 +198,11 @@ const RegisterSarasVigyan = () => {
               />
             </div>
             <button type="submit" className="workshop-submit">
-Pre Book Now with 100% refund            </button>
+              Register And pay Rs 159{" "}
+            </button>
             {status && <p className="success-message">{status}</p>}
           </form>
-        </div>
+        </div> */}
       </div>
     </div>
   );

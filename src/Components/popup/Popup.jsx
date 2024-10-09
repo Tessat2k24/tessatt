@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import "./Popup.css";
 import logo from "./logo.svg";
-import arduino from "./arduino.svg";
+import pcb from "./pcb.svg";
 import jobSearch from "./job-search.svg";
 
 function Popup() {
@@ -56,12 +56,12 @@ function Popup() {
           <div className="notification-panel">
             <div className="notification">
               <div className="icon">
-                <img src={arduino} alt="Arduino Icon" />
+                <img src={pcb} alt="Arduino Icon" />
               </div>
               <div className="content">
                 <div className="category">Workshop</div>
                 <div className="message">2 Day Workshop</div>
-                <div className="time">11 12 October 2024</div>
+                <div className="time">13 14 October 2024</div>
               </div>
             </div>
 
