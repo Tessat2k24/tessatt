@@ -64,7 +64,7 @@ const Program = () => {
   }, []);
 
   return (
-    <section className="programs-section" ref={programsSectionRef}>
+    <section className="programs-section" id="program" ref={programsSectionRef}>
       <h1 className="program-heading">Programs</h1>
       <div className="program-cards">
         {/* Saras Vigyan Card */}

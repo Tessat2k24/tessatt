@@ -54,16 +54,29 @@ function Popup() {
         {/* Notification Popup (appears instantly after logo is shrunk) */}
         {isNotificationVisible && (
           <div className="notification-panel">
-            <div className="notification">
-              <div className="icon">
-                <img src={pcb} alt="Arduino Icon" />
+            <Link
+              activeClass="active"
+              to="program" // This should match the id of the section you want to scroll to
+              spy={true}
+              smooth={true}
+              offset={-40} // Adjust based on your layout
+              duration={500} // Duration of the scroll
+            >
+              <div className="notification">
+                <div className="icon">
+                  <img src={pcb} alt="Pcb Icon" />
+                </div>
+                <div className="content">
+                  <div className="category">2 Day Online Workshop</div>
+                  <div className="message">
+                    SARASVIGYAN
+                  </div>
+                  <div className="time">
+                    <b>13-14</b> October <b>&#9642; Live Now</b>
+                  </div>
+                </div>
               </div>
-              <div className="content">
-                <div className="category">Workshop</div>
-                <div className="message">2 Day Workshop</div>
-                <div className="time">13 14 October 2024</div>
-              </div>
-            </div>
+            </Link>
 
             <div className="notification">
               <div className="icon">
