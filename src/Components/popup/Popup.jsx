@@ -54,7 +54,7 @@ function Popup() {
         {/* Notification Popup (appears instantly after logo is shrunk) */}
         {isNotificationVisible && (
           <div className="notification-panel">
-            <Link
+            {/* <Link
               activeClass="active"
               to="program" // This should match the id of the section you want to scroll to
               spy={true}
@@ -76,18 +76,26 @@ function Popup() {
                   </div>
                 </div>
               </div>
+            </Link> */}
+            <Link
+              activeClass="active"
+              to="program" // This should match the id of the section you want to scroll to
+              spy={true}
+              smooth={true}
+              offset={-40} // Adjust based on your layout
+              duration={500} // Duration of the scroll
+            >
+              <div className="notification">
+                <div className="icon">
+                  <img src={jobSearch} alt="Job Search Icon" />
+                </div>
+                <div className="content">
+                  <div className="category">Reminder</div>
+                  <div className="message">Join our Internship Program</div>
+                  <div className="time">Apply Now</div>
+                </div>
+              </div>
             </Link>
-
-            <div className="notification">
-              <div className="icon">
-                <img src={jobSearch} alt="Job Search Icon" />
-              </div>
-              <div className="content">
-                <div className="category">Reminder</div>
-                <div className="message">Join our Internship Program</div>
-                <div className="time">Apply Now</div>
-              </div>
-            </div>
           </div>
         )}
       </div>

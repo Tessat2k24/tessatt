@@ -91,31 +91,34 @@ const RegisterSarasVigyan = () => {
                 Printing(Basics){" "}
               </p>
             </div>
-            <div className="information">
+            {/* <div className="information">
               <img src={online} className="icon" alt="mode" />
               <p>Mode: Online</p>
-            </div>
+            </div> */}
             <div className="information">
+              <p>Subscribe Our newsletter for latest updates about the event</p>
+            </div>
+            {/* <div className="information">
               <img src={calendar} className="icon" alt="Date" />
               <p>
                 October 13, 2024 6pm to 8pm
                 <br />
                 October 14, 2024 7:30pm to 9:30pm
               </p>
-            </div>
+            </div> */}
             {/* <div className="information">
               <img src={seat} className="icon" alt="seat" />
               <p>100 Seats Only</p>
             </div> */}
 
-            <div className="information">
+            {/* <div className="information">
               <img src={fees} className="icon" alt="fees" />
               <p>
                 Early bird Offer:&#x20b9; 119 (Only for First 10 Registrations)
                 <br />
                 Regular Fees:&#x20b9; 159
               </p>
-            </div>
+            </div> */}
 
             <p>For More Information Contact Us</p>
             <div className="information">
@@ -127,13 +130,13 @@ const RegisterSarasVigyan = () => {
               <p>+91 8078157810</p>
             </div>
           </div>
-          <a href="https://forms.gle/yfDAkb17SxNamPsz6" target="_blank">
+          {/* <a href="https://forms.gle/yfDAkb17SxNamPsz6" target="_blank">
             {" "}
             <button className="workshop-submit">Register Now </button>
-          </a>
+          </a> */}
         </div>
 
-        {/* <div className="form-container">
+        <div className="form-container">
           <form className="form110" onSubmit={handleSubmit}>
             <div className="input-box">
               <label>Full Name</label>
@@ -198,11 +201,11 @@ const RegisterSarasVigyan = () => {
               />
             </div>
             <button type="submit" className="workshop-submit">
-              Register And pay Rs 159{" "}
+              Register Now{" "}
             </button>
             {status && <p className="success-message">{status}</p>}
           </form>
-        </div> */}
+        </div>
       </div>
     </div>
   );
