@@ -48,7 +48,7 @@ function News() {
       ScrollTrigger.getAll().forEach((t) => t.kill());
     };
   }, []);
-
+{/* <div class="tumblr-post" data-href="" data-did=""  ><a href=""></a></div><script async src="https://assets.tumblr.com/post.js?_v=38df9a6ca7436e6ca1b851b0543b9f51"></script> */}
   return (
     <div className="newscontainer" id="news">
       <div className="news-header">
@@ -57,12 +57,11 @@ function News() {
       <div className="news-section">
         <div
           className="tumblr-post"
-          data-href="https://embed.tumblr.com/embed/post/t:quL-fBKq2QR0yjIogq57hg/763491053363920896/v2"
-          data-did="c12d130e5134939d875d20bb4d4c70e1f8a78748"
+          data-href="https://embed.tumblr.com/embed/post/t:quL-fBKq2QR0yjIogq57hg/765912923573010433/v2"
+          data-did="15e864b08daa48455457526e3c9e9a8dc9564cb8"
         >
-          <a href="hhttps://www.tumblr.com/tessat-space/763491053363920896/tessat-one-of-the-top-5-startups-from-south">
-https://www.tumblr.com/tessat-space/763491053363920896/tessat-one-of-the-top-5-startups-from-south
-          </a>
+          <a href="https://www.tumblr.com/tessat-space/765912923573010433/tessat-wins-2nd-place-at-innovision-at-the-iedc">
+https://www.tumblr.com/tessat-space/765912923573010433/tessat-wins-2nd-place-at-innovision-at-the-iedc          </a>
         </div>
         <div className="news-content">
           <h1 className="text-1xl font-semibold text-center text-black capitalize lg:text-2xl mb-4">
