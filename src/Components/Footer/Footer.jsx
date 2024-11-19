@@ -191,9 +191,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer-bottom">
+      {/* <div className="footer-bottom">
         &copy; 2024 Tessat. All rights reserved.
-      </div>
+      </div> */}
     </footer>
   );
 };
